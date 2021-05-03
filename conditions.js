@@ -169,5 +169,7 @@ else console.log('-');
 
 console.log('Duka Dizel pobjedio');
 
+console.log('Ozbiljno sam se nasvirao sa vaporajzerče');
+
 
 
