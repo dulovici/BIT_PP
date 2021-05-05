@@ -201,12 +201,14 @@ console.log('Loops');
 
 // var e = 2;
 // var t1 = [4, 6, 2, 8, 2, 2];
+// var t2 = [];
 
-
-// for(var i =0; i <= t1.length; i++){
-//     if(t1[i] === e) t1.splice(i,1)
+// for (var i = 0; i < t1.length; i++) {
+//     if (t1[i] !== e) t2.push(t1[i])
 // }
-// console.log(t1);
+// console.log(t2);
+
+
 
 
 //========================================================================================================
@@ -225,11 +227,20 @@ console.log('Loops');
 // &quot;Fizz&quot; or &quot;Buzz&quot; for numbers divisible by only one of those).
 
 
-for (var i = 0; i <= 100; i++) {
-    if (i % 3 === 0 && i % 5 === 0) console.log('FizzBuzz');
-    else if (i % 5 === 0) console.log('Buzz');
-    else if (i % 3 === 0) console.log('Fizz');
-    else console.log(i);
-}
+// for (var i = 0; i <= 100; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) console.log('FizzBuzz');
+//     else if (i % 5 === 0) console.log('Buzz');
+//     else if (i % 3 === 0) console.log('Fizz');
+//     else console.log(i);
+// }
 
-console.log('git');
+
+
+
+
+
+
+//===================SKOLSKI RAD
+
+
+
