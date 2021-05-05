@@ -193,6 +193,11 @@ console.log('Loops');
 // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
 // Output array: [4, 5, 6, 2, 3, 8, 11, 9]
 
+// var arr1 = [4, 5, 6, 2];
+// var arr2 = [3, 8, 11, 9];
+// var concated = [];
+
+
 //========================================================================================================
 
 // 15. Write a program that deletes a given element e from the array a.
