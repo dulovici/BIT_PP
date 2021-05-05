@@ -13,8 +13,6 @@ console.log('Loops');
 
 //========================================================================================================
 
-
-
 // 1. Write a for loop that will iterate from 0 to 15. For each iteration, it will check if the current
 // number is odd or even, and display a message to the screen.
 
@@ -102,8 +100,20 @@ console.log('Loops');
 //     total += students[i];
 //     console.log();
 // }
-// var avr = total / students.length
-// Zavrsi drugi deo 
+// var avg = total / students.length
+// console.log('Avarage is ' + avg );
+
+// if (avg < 60) {
+//     console.log("Grade is F")
+// } else if (avg < 70) {
+//     console.log("Grade is D")
+// } else if (avg < 80) {
+//     console.log("Grade is C")
+// } else if (avg < 90) {
+//     console.log("Grade is B")
+// } else if (avg < 100) {
+//     console.log("Grade is A")
+// }
 
 
 //========================================================================================================
@@ -139,6 +149,18 @@ console.log('Loops');
 // index.
 // Input array: [4, 2, 2, -1, 6]
 // Output: -1, 3
+
+// var arr = [4, 2, 2, -1, 6];
+// var min = Infinity;
+// var index;
+// for(var i =0; i<arr.length; i++) {
+//     if(arr[i]<min) {
+//         min = arr[i];
+//         index = i;
+//     }
+// }
+// console.log(min,index);
+
 
 //========================================================================================================
 
@@ -241,24 +263,24 @@ console.log('Loops');
 
 
 
-//===================>   SKOLSKI RAD  <=======================================
+//===================>   SKOLSKI RAD   <=======================================
 
-//Find biggest and smallest number in array
-var min = Infinity;
-var max = -Infinity;
-var arr = [4, 6, 8, 24, 7, 9, 12, 4, 3];
-//filter max
-for (var i = 0; i < arr.length; i++) {
-    if (arr[i] < min) {
-        min = arr[i];
-    }
-}
-console.log(min);
+// //Find biggest and smallest number in array
+// var min = Infinity;
+// var max = -Infinity;
+// var arr = [4, 6, 8, 24, 7, 9, 12, 4, 3];
+// //filter max
+// for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] < min) {
+//         min = arr[i];
+//     }
+// }
+// console.log(min);
 
-//Filter min
-for (var i = 0; i < arr.length; i++) {
-    if (arr[i] > max) {
-        max = arr[i];
-    }
-}
-console.log(max);
+// //Filter min
+// for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//         max = arr[i];
+//     }
+// }
+// console.log(max);
