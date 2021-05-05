@@ -96,13 +96,13 @@ console.log('Loops');
 // var danny = 88;
 // var john = 95;
 // var thomas = 68;
-// var students = [david,marko,danny,john,thomas];
+// var students = [david, marko, danny, john, thomas];
 // var total = 0;
-// for (var i = 0; i<students.length; i++) {
+// for (var i = 0; i < students.length; i++) {
 //     total += students[i];
 //     console.log();
 // }
-// var avr = total/students.length
+// var avr = total / students.length
 // Zavrsi drugi deo 
 
 
@@ -236,11 +236,24 @@ console.log('Loops');
 
 
 
+//===================>   SKOLSKI RAD  <=======================================
 
+//Find biggest and smallest number in array
+var min = Infinity;
+var max = -Infinity;
+var arr = [4, 6, 8, 24, 7, 9, 12, 4, 3];
+//filter max
+for (var i = 0; i < arr.length; i++) {
+    if (arr[i] < min) {
+        min = arr[i];
+    }
+}
+console.log(min);
 
-
-
-//===================SKOLSKI RAD
-
-
-
+//Filter min
+for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+        max = arr[i];
+    }
+}
+console.log(max);
