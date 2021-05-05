@@ -168,6 +168,18 @@ console.log('Loops');
 // Input array: [4, 2, 2, -1, 6]
 // Output: 2
 
+// var arr = [4, 2, 2, -1, 6,-8];
+// var min = Infinity;
+// var srtArr = [];
+// for(var i =0; i<arr.length; i++){
+//     if(arr[i] <= min) {
+//         min = arr[i]
+//         srtArr[i] = min;
+//     }
+// }
+// console.log(min);
+// console.log(srtArr);   <===========================ZAVRŠI
+
 //========================================================================================================
 
 // 11. Write a program that calculates the sum of positive elements in the array.
@@ -218,6 +230,18 @@ console.log('Loops');
 // var arr1 = [4, 5, 6, 2];
 // var arr2 = [3, 8, 11, 9];
 // var concated = [];
+
+
+// for(var i = 0; i < arr1.length; i++) {
+//     concated[i] = arr1[i]
+// }
+
+// for(var i = arr1.length; i < arr1.length + arr2.length; i++) {
+//     concated[i] = arr2[i-arr2.length]
+// }
+// console.log(concated);
+
+
 
 
 //========================================================================================================
@@ -284,3 +308,7 @@ console.log('Loops');
 //     }
 // }
 // console.log(max);
+
+
+
+
