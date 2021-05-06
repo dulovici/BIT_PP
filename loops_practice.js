@@ -300,21 +300,21 @@ console.log('Loops');
 // Input: e = 78, p = 3, a = [2, -2, 33, 12, 5, 8]
 // Output: [2, -2, 33, 78, 12, 5, 8]
 
-var arr = [2, -2, 33, 12, 5, 8];
-var e = 78;
-var p = 3;
-var newArr = [];
+// var arr = [2, -2, 33, 12, 5, 8];
+// var e = 78;
+// var p = 3;
+// var newArr = [];
 
-if (arr.length < p) console.log('ERORR!');
-else {
-    for (var i = 0; i < arr.length; i++) {
-        if (i === p) {
-            newArr[newArr.length] = e
-        }
-        newArr[newArr.length] = arr[i];
-    }
-    console.log(newArr);
-}
+// if (arr.length < p) console.log('ERORR!');
+// else {
+//     for (var i = 0; i < arr.length; i++) {
+//         if (i === p) {
+//             newArr[newArr.length] = e
+//         }
+//         newArr[newArr.length] = arr[i];
+//     }
+//     console.log(newArr);
+// }
 
 
 
