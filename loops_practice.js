@@ -263,7 +263,7 @@ console.log('Loops');
 
 
 // for (var i = 0; i < arr1.length; i++) {
-//     concated[i] = arr1[i]
+//     concated[concated.length] = arr1[i]
 // }
 // for (var i = 0; i < arr2.length; i++) {
 //     concated[concated.length] = arr2[i]
@@ -307,18 +307,14 @@ console.log('Loops');
 
 // if (arr.length < p) console.log('ERORR!');
 // else {
-//     for (var i = 0; i < arr.length; i++) {
-//         if (i === p) {
-//             newArr[newArr.length] = e
-//         }
-//         newArr[newArr.length] = arr[i];
+//     for(var i = 0; i<arr.length; i++) {
+//         if(i === p) newArr[newArr.length] = e;
+//         newArr[newArr.length] = arr[i]
 //     }
 //     console.log(newArr);
 // }
-
-
-
-
+ 
+    
 
 //========================================================================================================
 
