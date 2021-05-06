@@ -168,17 +168,21 @@ console.log('Loops');
 // Input array: [4, 2, 2, -1, 6]
 // Output: 2
 
-// var arr = [4, 2, 2, -1, 6,-8];
+// var arr = [4, 2, 2, -1, 6];
 // var min = Infinity;
-// var srtArr = [];
-// for(var i =0; i<arr.length; i++){
-//     if(arr[i] <= min) {
-//         min = arr[i]
-//         srtArr[i] = min;
+// var secondMin = Infinity;                
+// for(var i =0; i<arr.length; i++){                
+//     if(arr[i] < min) {
+//         min = arr[i];
+//     }
+// } 
+// for(var i =0; i<arr.length; i++) {              
+//     if(arr[i] > min && arr[i] < secondMin) { 
+//         secondMin = arr[i];
 //     }
 // }
-// console.log(min);
-// console.log(srtArr);   <===========================ZAVRŠI
+// console.log(secondMin);
+ 
 
 //========================================================================================================
 
@@ -308,6 +312,10 @@ console.log('Loops');
 //     }
 // }
 // console.log(max);
+
+
+
+
 
 
 
