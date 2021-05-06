@@ -124,10 +124,15 @@ console.log('Loops');
 
 // var e = 3;
 // var a = [5, -4.2, 3, 7];
+// var t = 0;
 
-// for(var i = 0; i<a.length; i++) {
-//     if(e === a[i]) console.log('yes');
+// for (var i = 0; i < a.length; i++) {
+//     if (e === a[i]) {
+//         t++
+//     }
 // };
+// if (t > 0) console.log('Yes');
+// else console.log('No');
 
 
 //========================================================================================================
@@ -136,11 +141,15 @@ console.log('Loops');
 // Input array: [-3, 11, 5, 3.4, -8]
 // Output array: [-3, 22, 10, 6.8, -8]
 
-// var arr8 = [-3, 11, 5, 3.4, -8];
-// for(var i = 0; i<arr8.length; i++) {
-//     if (arr8[i] > 0) console.log(arr8[i]*2);
-//     else console.log(arr8[i]);
+// var arr = [-3, 11, 5, 3.4, -8];
+// var posMul = [];
+
+// for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) posMul[i] = arr[i] * 2;
+//     else posMul[i] = arr[i]
 // }
+
+// console.log(posMul);
 
 
 //========================================================================================================
@@ -182,7 +191,7 @@ console.log('Loops');
 //     }
 // }
 // console.log(secondMin);
- 
+
 
 //========================================================================================================
 
@@ -218,12 +227,29 @@ console.log('Loops');
 // else console.log('Is not symetric');console.log(i);
 
 
-//========================================================================================================
+//========================================================================================================>>>
 
 // 13. Write a program that intertwines two arrays. You can assume the arrays are of the same
 // length.
 // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
 // Output array: [4, 3, 5, 8, 6, 11, 2, 9]
+
+// var arr1 = [4, 5, 6, 2];
+// var arr2 = [3, 8, 11, 9];
+// var cnt = 0;
+// var intArr = [];
+
+
+// for (var i = 0; i < arr1.length; i++) {
+//     intArr[cnt] = arr1[i]
+//     cnt++
+//     intArr[cnt] = arr2[i]
+//     cnt++
+// }
+
+
+// console.log(intArr);
+
 
 //========================================================================================================
 
@@ -236,12 +262,11 @@ console.log('Loops');
 // var concated = [];
 
 
-// for(var i = 0; i < arr1.length; i++) {
+// for (var i = 0; i < arr1.length; i++) {
 //     concated[i] = arr1[i]
 // }
-
-// for(var i = arr1.length; i < arr1.length + arr2.length; i++) {
-//     concated[i] = arr2[i-arr2.length]
+// for (var i = 0; i < arr2.length; i++) {
+//     concated[concated.length] = arr2[i]
 // }
 // console.log(concated);
 
@@ -259,19 +284,41 @@ console.log('Loops');
 // var t2 = [];
 
 // for (var i = 0; i < t1.length; i++) {
-//     if (t1[i] !== e) t2.push(t1[i])
+//     if (t1[i] !== e) {
+//         t2[t2.length] = t1[i]
+//     }
 // }
 // console.log(t2);
 
 
 
 
-//========================================================================================================
+//========================================================================================================>>>
 
 // 16. Write a program that inserts a given element e on the given position p in the array a. If
 // the value of the position is greater than the array length, print the error message.
 // Input: e = 78, p = 3, a = [2, -2, 33, 12, 5, 8]
 // Output: [2, -2, 33, 78, 12, 5, 8]
+
+var arr = [2, -2, 33, 12, 5, 8];
+var e = 78;
+var p = 3;
+var newArr = [];
+
+if (arr.length < p) console.log('ERORR!');
+else {
+    for (var i = 0; i < arr.length; i++) {
+        if (i === p) {
+            newArr[newArr.length] = e
+        }
+        newArr[newArr.length] = arr[i];
+    }
+    console.log(newArr);
+}
+
+
+
+
 
 //========================================================================================================
 
