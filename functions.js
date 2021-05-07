@@ -48,6 +48,15 @@ console.log('Fumkcije');
 // *    *
 // *****
 
+// function drawSquare(n) {
+//     var square = '';
+//     for (var i = 1; i <= n; i++) {
+//         for (var j = 1; j <= n; j++) {
+
+//         }
+//     }
+// }
+
 
 
 
@@ -181,4 +190,28 @@ console.log('Fumkcije');
 // 1 -> 1st
 // 11 -> 11th
 
-console.log('ff');
+
+
+
+
+//=====================================================CLASSWORK===================================================================
+
+
+function buildRow(n) {
+    var row = '';
+    for (var i = 0; i < n; i++) {
+        row += '* '
+    }
+    return row;
+};
+
+function bildSquare(n) {
+    var squ = '';
+    for (var i = 0; i < 4; i++) {
+        squ += buildRow(n) + '\n'
+    }
+    return squ;
+}
+
+console.log(bildSquare(5));
+console.log(bildSquare(10));
