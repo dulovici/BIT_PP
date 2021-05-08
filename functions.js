@@ -375,7 +375,7 @@ console.log('Fumkcije');
 // "myemailaddress@bgit.rs" -> "mye...@bgit.rs"
 
 // 10. Write a program to find the most frequent item of an array.
-// [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3].
+// [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]
 
 
 
