@@ -163,6 +163,12 @@ console.log('Fumkcije');
 // "My random string" -> true
 // 12 -> false
 
+// function isAstring(a) {
+//     if (typeof a === 'string') return true;
+//     else return false;
+// }
+// console.log(isAstring(4));
+
 
 
 // 2. Write a function to check whether a string is blank or not.
@@ -171,16 +177,70 @@ console.log('Fumkcije');
 // 12 -> false
 // false -> false
 
+// function blankString(a) {
+//     if (typeof a === 'string' && a.length > 0) return true;
+//     else return false;
+// }
+// console.log(blankString(true));
+
+
+
 // 3. Write a function that concatenates a given string n times (default is 1).
 // "Ha" -> "Ha"
 // "Ha", 3 -> "HaHaHa"
 
+// function repeatString(str,n) {
+//     var strn = '';
+//     if(n === undefined) strn+=str;
+//     else {
+//         for(var i = 0; i<=n; i++) {
+//             strn+=str
+//         }
+//     }
+//     return strn
+// }
+// console.log(repeatString('Ha',8));
+
+
+
 // 4. Write a function to count the number of letter occurrences in a string.
 // "My random string", "n" -> 2
 
+// function howManyLet(str,l) {
+//     var cnt = 0;
+//     for(var i = 0; i<str.length; i++) {
+//         if(str[i] === l) cnt++;
+//     }
+//     return cnt;
+// }
+// console.log(howManyLet('Ananas','a'));
+// //Is case sensitive
+
+
+
 // 5. Write a function to find the position of the first occurrence of a character in a string. The result should be the position of character. If there are no occurrences of the character, the function should return -1.
 
+// function firstIdxOfCh(str,c) {
+//     for(var i = 0;i<str.length; i++) {
+//         if(str[i] === c) return i;
+//     }
+//     return -1
+// }
+// console.log(firstIdxOfCh('abacdek','g'));
+
+
+
 // 6. Write a function to find the position of the last occurrence of a character in a string. The result should be in human numeration form. If there are no occurrences of the character, function should return -1.
+
+// function lastIndexOfCh(str,c) {
+//     for(var i = str.length; i>=0; i--) {
+//         if(str[i] === c) return i;
+//     }
+//     return -1;
+// }
+// console.log(lastIndexOfCh('ananas','a'));
+
+
 
 // 7. Write a function to convert string into an array. Space in a string should be represented as “null” in new array.
 // "My random string" -> ["M", "y", null, "r", "a"]
