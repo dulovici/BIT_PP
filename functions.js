@@ -324,6 +324,16 @@ console.log('Fumkcije');
 // 1 -> 1st
 // 11 -> 11th
 
+// function humanizeNum(n) {
+//     var num = '';
+//     if(n === 1) num = '1st';
+//     else if(n === 2) num = '2nd';
+//     else if(n === 3) num = '3rd';
+//     else num = n + 'th';
+
+//     return num;
+// }
+// console.log(humanizeNum(1));
 
 
 
