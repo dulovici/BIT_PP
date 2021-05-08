@@ -311,9 +311,19 @@ console.log('Fumkcije');
 
 // 12. Write a function to calculate how many years there are left until retirement based on the year of birth. Retirement for men is at age of 65 and for women at age of 60. If someone is already retired, a proper message should be displayed.
 
+// function yrsToGo(byear) {
+//     var yearToGo = 2022 - byear;
+//     if (yearToGo >= 65) return 'Congratulations you dont need to work anymore!';
+//     else return 'Go to work you lazy cunt.'
+// }
+// console.log(yrsToGo(1942));
+
+
+
 // 12. Write a function to humanize a number (formats a number to a human-readable string) with the correct suffix such as 1st, 2nd, 3rd or 4th.
 // 1 -> 1st
 // 11 -> 11th
+
 
 
 
