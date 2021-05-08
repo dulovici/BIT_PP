@@ -48,15 +48,30 @@ console.log('Fumkcije');
 // *    *
 // *****
 
-// function drawSquare(n) {
-//     var square = '';
-//     for (var i = 1; i <= n; i++) {
-//         for (var j = 1; j <= n; j++) {
-
-//         }
+// function buildRow(n) {
+//     var row = '';
+//     for(var i =0; i<n; i++) {
+//         row += '*'
 //     }
+//     return row;
 // }
-
+// function buildCol(n) {
+//     var col = '';
+//     for(var i = 0; i<n; i++){
+//         if(i === 0 || i === n-1) col += '*';
+//         else col += ' ';
+//     }
+//     return col;
+// }
+// function bildSquare(n) {
+//     var square = '';
+//     for(var i = 0; i<n; i++) {
+//         if(i === 0 || i === n-1) square += buildRow(n) + '\n'
+//         else square += buildCol(n) + '\n'
+//     }
+//     return square;
+// }
+// console.log(bildSquare(15));
 
 
 
@@ -65,12 +80,11 @@ console.log('Fumkcije');
 // * * *
 // * * * * * * *
 
-// function horizontalCh(a,b,c) {
-//     for(var i=0; i<a; i++) console.log('*');
-//     for(var i=0; i<b; i++) console.log('*');
-//     for(var i=0; i<c; i++) console.log('*');
+// function build(a,b,c) {
+//     var stars = buildRow(a) + '\n' + buildRow(b)+ '\n' + buildRow(c);
+//     return stars
 // }
-// horizontalCh(5,3,7)
+// console.log(build(5,3,7));
 
 
 
@@ -149,6 +163,8 @@ console.log('Fumkcije');
 // "My random string" -> true
 // 12 -> false
 
+
+
 // 2. Write a function to check whether a string is blank or not.
 // "My random string" -> false
 // " " -> true
@@ -197,21 +213,22 @@ console.log('Fumkcije');
 //=====================================================CLASSWORK===================================================================
 
 
-function buildRow(n) {
-    var row = '';
-    for (var i = 0; i < n; i++) {
-        row += '* '
-    }
-    return row;
-};
+// function buildRow(n) {
+//     var row = '';
+//     for (var i = 0; i < n; i++) {
+//         row += '* '
+//     }
+//     return row;
+// };
 
-function bildSquare(n) {
-    var squ = '';
-    for (var i = 0; i < 4; i++) {
-        squ += buildRow(n) + '\n'
-    }
-    return squ;
-}
+// function bildSquare(n) {
+//     var squ = '';
+//     for (var i = 0; i < 4; i++) {
+//         squ += buildRow(n) + '\n'
+//     }
+//     return squ;
+// }
 
-console.log(bildSquare(5));
-console.log(bildSquare(10));
+// console.log(bildSquare(5));
+// console.log(bildSquare(10));
+
