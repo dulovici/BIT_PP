@@ -259,7 +259,7 @@ console.log('Fumkcije');
 
 
 // 8. Write a function that accepts a number as a parameter and checks if the number is prime or not. 
-// Note: A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+// Note: A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.   =============>REWIEW
 
 // function isPrime(num) {
 //     for(var i = 2; i < num; i++)
@@ -267,7 +267,7 @@ console.log('Fumkcije');
 //     return num > 1;
 // }
 // console.log(isPrime(8));
-//=========================================>REWIEW
+
 
 
 
@@ -289,10 +289,25 @@ console.log('Fumkcije');
 
 
 
-// 10.  Write a function to get the first n characters and add “...” at the end of newly created string.
+// 10.  Write a function to get the first n characters and add “...” at the end of newly created string.                    ===============>NE RAZUMEM
+
+
 
 // 11. Write a function that converts an array of strings into an array of numbers. Filter out all non-numeric values.
 // ["1", "21", undefined, "42", "1e+3", Infinity] -> [1, 21, 42, 1000]
+
+// var test = ["1", "21", undefined, "42", "1e+3", Infinity];
+// function arrOfNumsGen(arr) {
+//     var nums = [];
+//     for(var i = 0; i < arr.length; i++) {
+//         if(typeof arr[i] === 'string') nums[nums.length] = Number(arr[i]);
+
+//     }
+//     return nums;
+// }
+// console.log(arrOfNumsGen(test));
+
+
 
 // 12. Write a function to calculate how many years there are left until retirement based on the year of birth. Retirement for men is at age of 65 and for women at age of 60. If someone is already retired, a proper message should be displayed.
 
