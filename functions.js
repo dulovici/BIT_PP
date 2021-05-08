@@ -276,10 +276,17 @@ console.log('Fumkcije');
 // "My random string", "+" -> "My+random+string"
 // "My random string" -> "My-random-string"
 
-// function wordSeparator(str) {
-    
+// function wordSeparator(str,s) {
+//     var word = '';
+//     for(var i = 0; i<str.length; i++) {
+//         if(str[i] === ' ' && s === undefined) word+= '-';
+//         else if(str[i] === ' ') word+= s;
+//         else word+= str[i]
+//     }
+//     return word;
 // }
-// console.log(wordSeparator('Jedan dva'));
+// console.log(wordSeparator('Jedan dva tri cetri','_'));
+
 
 
 // 10.  Write a function to get the first n characters and add “...” at the end of newly created string.
@@ -318,4 +325,33 @@ console.log('Fumkcije');
 
 // console.log(bildSquare(5));
 // console.log(bildSquare(10));
+
+
+
+//Buld rectangle. <<========
+// function buildRow(n) {
+//     var row = '';
+//     for(var i =0; i<n; i++) {
+//         row += '*'
+//     }
+//     return row;
+// }
+// function buildCol(n) {
+//     var col = '';
+//     for(var i = 0; i<n; i++){
+//         if(i === 0 || i === n-1) col += '*';
+//         else col += ' ';
+//     }
+//     return col;
+// }
+// function bildRectangle(n,e) {
+//     var square = '';
+//     for(var i = 0; i<e; i++) {
+//         if(i === 0 || i === e-1) square += buildRow(n) + '\n'
+//         else square += buildCol(n) + '\n'
+//     }
+//     return square;
+// }
+// console.log(bildRectangle(15,3));
+
 
