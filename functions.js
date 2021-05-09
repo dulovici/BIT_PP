@@ -301,7 +301,6 @@ console.log('Fumkcije');
 //     var nums = [];
 //     for(var i = 0; i < arr.length; i++) {
 //         if(typeof arr[i] === 'string') nums[nums.length] = Number(arr[i]);
-
 //     }
 //     return nums;
 // }
@@ -320,7 +319,7 @@ console.log('Fumkcije');
 
 
 
-// 12. Write a function to humanize a number (formats a number to a human-readable string) with the correct suffix such as 1st, 2nd, 3rd or 4th.
+// 13. Write a function to humanize a number (formats a number to a human-readable string) with the correct suffix such as 1st, 2nd, 3rd or 4th.
 // 1 -> 1st
 // 11 -> 11th
 
@@ -337,11 +336,18 @@ console.log('Fumkcije');
 
 
 
-//===================================================== SLIDE 3===================================================================
+//===================================================== SLIDE 3 ===================================================================
 
-// 1. Write a program to insert a string within a string at a particular position (default is 1, beginning of a string).
+// 1. Write a program to insert a string within a string at a particular position (default is 1, beginning of a string).   ====> ZAVRŠI
 // "My random string", "JS " -> "JS My random string"
 // "My random string", "JS ", 10 -> "My random JS string"
+
+// function pushString(str,wor,p) {
+//     var word = '';
+//     for(var i = 0; i < str.length; i++) {
+
+//     }
+// }
 
 // 2. Write a program to join all elements of the array into a string skipping elements that are undefined, null, NaN or Infinity.
 // [NaN, 0, 15, false, -22, '', undefined, 47, null]
@@ -375,7 +381,7 @@ console.log('Fumkcije');
 // "myemailaddress@bgit.rs" -> "mye...@bgit.rs"
 
 // 10. Write a program to find the most frequent item of an array.
-// [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]
+// [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3].
 
 
 
@@ -435,6 +441,35 @@ console.log('Fumkcije');
 //     }
 //     return square;
 // }
-// console.log(bildRectangle(15,3));
+// console.log(bildRectangle(15,5));
+
+
+
+
+function buildRow(n) {
+    var row = '';
+    for(var i =0; i<n; i++) {
+        row += '*'
+    }
+    return row;
+}
+function buildCol(n) {
+    var col = '';
+    for(var i = 0; i<n; i++){
+        if(i === 0 || i === n-1) col += '*';
+        else col += ' ';
+    }
+    return col;
+}
+function bildSquare(n,b) {
+    var square = '';
+    for(var i = 0; i<b; i++) {
+        if(i === 0 || i === b-1) square += buildRow(n) + '\n'
+        else square += buildCol(n) + '\n'
+    }
+    return square;
+}
+console.log(bildSquare(15,5));
+
 
 
