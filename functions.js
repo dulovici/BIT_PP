@@ -356,13 +356,26 @@ console.log('Fumkcije');
 //     }
 //     return word;
 // }
-// console.log(pushString('Devic Milenko', '*', 10));
+// console.log(pushString('Devic Milenko', '*', 5));
 
 
 
 
 // 2. Write a program to join all elements of the array into a string skipping elements that are undefined, null, NaN or Infinity.
 // [NaN, 0, 15, false, -22, '', undefined, 47, null]
+
+// var test = [NaN, 0, 15, false, -22, '', undefined, 47, null];
+
+// function joinElements(arr) {
+//     var output = '';
+//     for(var i = 0; i<arr.length; i++) {
+//         if((typeof arr[i] === 'number' || typeof arr[i] === 'string' ) && arr[i] + '' !== 'NaN') output += arr[i] + ' ';
+//     }
+//     return output;
+// }
+// console.log(joinElements(test));
+
+
 
 // 3. Write a program to filter out falsy values from the array.
 // [NaN, 0, 15, false, -22, '', undefined, 47, null] -> [15, -22, 47]
@@ -454,7 +467,6 @@ console.log('Fumkcije');
 //     return square;
 // }
 // console.log(bildRectangle(15,5));
-
 
 
 
