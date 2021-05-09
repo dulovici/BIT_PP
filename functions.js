@@ -380,6 +380,19 @@ console.log('Fumkcije');
 // 3. Write a program to filter out falsy values from the array.
 // [NaN, 0, 15, false, -22, '', undefined, 47, null] -> [15, -22, 47]
 
+// var test = [NaN, 0, 15, false, -22, '', undefined, 47, null];
+
+// function filterFalsy(arr) {
+//     var output = [];
+//     for(var i = 0; i<arr.length; i++) {
+//         if(arr[i]) output[output.length] = arr[i];
+//     }
+//     return output;
+// }
+// console.log(filterFalsy(test));
+
+
+
 // 4. Write a function that reverses a number. The result must be a number.
 // 12345 -> 54321 // Output must be a number
 
