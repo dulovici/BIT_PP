@@ -226,7 +226,7 @@ console.log('Fumkcije');
 //     }
 //     return -1
 // }
-// console.log(firstIdxOfCh('abacdek','g'));
+// console.log(firstIdxOfCh('aleksandar','s'));
 
 
 
@@ -395,6 +395,8 @@ console.log('Fumkcije');
 
 // 4. Write a function that reverses a number. The result must be a number.
 // 12345 -> 54321 // Output must be a number
+
+
 
 // 5. Write a function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of the array.
 // [7, 9, 0, -2] -> -2
