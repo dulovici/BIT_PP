@@ -344,10 +344,22 @@ console.log('Fumkcije');
 
 // function pushString(str,wor,p) {
 //     var word = '';
-//     for(var i = 0; i < str.length; i++) {
-
+//     if(p === undefined) {
+//         word += wor + ' ';
+//         for(var i = 0; i < str.length; i++) word += str[i]
 //     }
+//     else {
+//         for(var i = 0; i < str.length; i++) {
+//             if(i === p) word += wor;
+//             word += str[i];
+//         }
+//     }
+//     return word;
 // }
+// console.log(pushString('Devic Milenko', '*', 10));
+
+
+
 
 // 2. Write a program to join all elements of the array into a string skipping elements that are undefined, null, NaN or Infinity.
 // [NaN, 0, 15, false, -22, '', undefined, 47, null]
@@ -446,30 +458,7 @@ console.log('Fumkcije');
 
 
 
-function buildRow(n) {
-    var row = '';
-    for(var i =0; i<n; i++) {
-        row += '*'
-    }
-    return row;
-}
-function buildCol(n) {
-    var col = '';
-    for(var i = 0; i<n; i++){
-        if(i === 0 || i === n-1) col += '*';
-        else col += ' ';
-    }
-    return col;
-}
-function bildSquare(n,b) {
-    var square = '';
-    for(var i = 0; i<b; i++) {
-        if(i === 0 || i === b-1) square += buildRow(n) + '\n'
-        else square += buildCol(n) + '\n'
-    }
-    return square;
-}
-console.log(bildSquare(15,5));
+
 
 
 
