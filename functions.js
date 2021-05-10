@@ -3,11 +3,13 @@ console.log('Fumkcije');
 // 1. Write a program that calculates the maximum of two given numbers. 
 // A = 5 b = 6 output: 6
 
-// function calcMax(a,b) {
-//     if (a>b) return a;
-//     else return b;
+// function calcMax(a, b) {
+//     if (a > b) return a;
+//     return b;
 // }
-// console.log(calcMax(5,6));
+// console.log(calcMax(6, 6));
+
+
 
 
 
@@ -15,8 +17,7 @@ console.log('Fumkcije');
 // A = 3 output: odd
 
 // function isOdd(n) {
-//     if(n%2 !== 0) return 'Number is ODD';
-//     else return 'Number is EVEN';
+//     return !!(n % 2);
 // }
 // console.log(isOdd(3));
 
@@ -25,7 +26,7 @@ console.log('Fumkcije');
 // 3. Write a program that checks if a given number is a three digit long number.
 
 // function threeDigitNum(n) {
-//     if(n >= 100) return true;
+//     if (n >= 100) return true;
 //     else return false;
 // }
 // console.log(threeDigitNum(100));
@@ -34,10 +35,10 @@ console.log('Fumkcije');
 
 // 4. Write a program that calculates an arithmetic mean of four numbers.
 
-// function findAvg(a,b,c,d) {
-//     return (a+b+c+d)/4;
+// function findAvg(a, b, c, d) {
+//     return (a + b + c + d) / 4;
 // }
-// console.log(findAvg(5,10,15,20));
+// console.log(findAvg(5, 10, 15, 20));
 
 
 
@@ -50,23 +51,23 @@ console.log('Fumkcije');
 
 // function buildRow(n) {
 //     var row = '';
-//     for(var i =0; i<n; i++) {
+//     for (var i = 0; i < n; i++) {
 //         row += '*'
 //     }
 //     return row;
 // }
 // function buildCol(n) {
 //     var col = '';
-//     for(var i = 0; i<n; i++){
-//         if(i === 0 || i === n-1) col += '*';
+//     for (var i = 0; i < n; i++) {
+//         if (i === 0 || i === n - 1) col += '*';
 //         else col += ' ';
 //     }
 //     return col;
 // }
 // function bildSquare(n) {
 //     var square = '';
-//     for(var i = 0; i<n; i++) {
-//         if(i === 0 || i === n-1) square += buildRow(n) + '\n'
+//     for (var i = 0; i < n; i++) {
+//         if (i === 0 || i === n - 1) square += buildRow(n) + '\n'
 //         else square += buildCol(n) + '\n'
 //     }
 //     return square;
@@ -395,6 +396,8 @@ console.log('Fumkcije');
 
 // 4. Write a function that reverses a number. The result must be a number.
 // 12345 -> 54321 // Output must be a number
+
+
 
 
 
