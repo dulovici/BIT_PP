@@ -397,6 +397,15 @@ console.log('Fumkcije');
 // 4. Write a function that reverses a number. The result must be a number.
 // 12345 -> 54321 // Output must be a number
 
+// var test = 12345;
+// function reverseNumber(n) {
+//     var input = n + '';
+//     var output = '';
+//     for(var i = input.length-1; i >= 0; i--) output+= input[i];
+
+//     return Number(output)
+// }
+// console.log(reverseNumber(test));
 
 
 
@@ -404,6 +413,8 @@ console.log('Fumkcije');
 // 5. Write a function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of the array.
 // [7, 9, 0, -2] -> -2
 // [7, 9, 0, -2], 2 -> [0, -2]  
+
+
 
 // 6. Write a function to create a specified number of elements with pre-filled numeric value array.
 // 6, 0 -> [0, 0, 0, 0, 0, 0]
