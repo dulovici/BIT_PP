@@ -432,6 +432,18 @@ console.log('Fumkcije');
 // 2, "none" -> ["none", "none"]
 // 2 -> [null, null] 
 
+// function arrGen(t,e) {
+//     var output = [];
+//     for(var i = 0; i < t; i++) {
+//         if(e === undefined) output[output.length] = null
+//         else output[output.length] = e;
+//     }
+//     return output;
+// }
+// console.log(arrGen(6,0));
+
+
+
 // 7. Write a function that says whether a number is perfect.
 // 28 -> 28 is a perfect number.
 // Note: According to Wikipedia: In number theory, a perfect number is a positive integer that is equal to the sum of its proper positive divisors, that is, the sum of its positive divisors excluding the number itself (also known as its aliquot sum). Equivalently, a perfect number is a number that is half the sum of all of its positive divisors (including itself).
@@ -441,6 +453,8 @@ console.log('Fumkcije');
 // 8. Write a function to find a word within a string.
 // 'The quick brown fox', 'fox' -> "'fox' was found 1 times"
 // 'aa bb cc dd aa', 'aa' -> "'aa' was found 2 times"
+
+
 
 // 9. Write a function to hide email address.
 // "myemailaddress@bgit.rs" -> "mye...@bgit.rs"
