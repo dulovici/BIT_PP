@@ -414,6 +414,17 @@ console.log('Fumkcije');
 // [7, 9, 0, -2] -> -2
 // [7, 9, 0, -2], 2 -> [0, -2]  
 
+// var test = [7, 9, 0, -2];
+// function returnLastEl(arr,n) {
+//     if(n === undefined) return arr[arr.length-1];
+//     var output = [];
+//     for(var i = n; i<arr.length; i++) {
+//         output[output.length] = arr[i]
+//     }
+//     return output;
+// };
+// console.log(returnLastEl(test,2));
+
 
 
 // 6. Write a function to create a specified number of elements with pre-filled numeric value array.
