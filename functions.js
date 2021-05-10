@@ -454,6 +454,18 @@ console.log('Fumkcije');
 // 'The quick brown fox', 'fox' -> "'fox' was found 1 times"
 // 'aa bb cc dd aa', 'aa' -> "'aa' was found 2 times"
 
+// var test = 'The quick brown fox';
+// var test2 = 'aa bb cc dd aa';
+// function findWord(str,w) {
+//     var arr = str.split(' ');
+//     var cnt = 0;
+//     for(var i = 0; i<arr.length; i++) {
+//         if(arr[i] === w) cnt++
+//     }
+//     return cnt;
+// }
+// console.log(findWord(test2,'bb'));          =============> VARAO SAM, ES6 RESENJE.
+
 
 
 // 9. Write a function to hide email address.
