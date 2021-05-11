@@ -92,8 +92,7 @@ console.log('Fumkcije');
 // 7. Write a program that calculates a number of digits of a given number. 
 
 // function numOfDig(n) {
-//     var x = ''
-//     return  (x + n).length
+//     return (n + '').length
 // }
 // console.log(numOfDig(100));
 
@@ -120,8 +119,8 @@ console.log('Fumkcije');
 // var arr = [2, 4, 7, 8, 7, 7, 1];
 // function sumOfOdd(ar) {
 //     var cnt = 0;
-//     for(var i = 0; i<ar.length; i++) {
-//         if(ar[i] % 2 !== 0) cnt+=ar[i]
+//     for (var i = 0; i < ar.length; i++) {
+//         if (ar[i] % 2) cnt += ar[i]
 //     }
 //     return cnt
 // }
@@ -134,8 +133,8 @@ console.log('Fumkcije');
 // var str = 'Ananas';
 // function howMannyLet(str) {
 //     var cnt = 0;
-//     for(var i = 0; i<str.length; i++) {
-//         if(str[i] === 'a'|| str[i] === 'A') cnt++
+//     for (var i = 0; i < str.length; i++) {
+//         if (str[i] === 'a' || str[i] === 'A') cnt++
 //     }
 //     return cnt;
 // }
@@ -179,10 +178,9 @@ console.log('Fumkcije');
 // false -> false
 
 // function blankString(a) {
-//     if (typeof a === 'string' && a.length > 0) return true;
-//     else return false;
+//     return a === ' ';
 // }
-// console.log(blankString(true));
+// console.log(blankString(' '));
 
 
 
@@ -190,17 +188,17 @@ console.log('Fumkcije');
 // "Ha" -> "Ha"
 // "Ha", 3 -> "HaHaHa"
 
-// function repeatString(str,n) {
+// function repeatString(str, n) {
 //     var strn = '';
-//     if(n === undefined) strn+=str;
+//     if (n === undefined) strn += str;
 //     else {
-//         for(var i = 0; i<=n; i++) {
-//             strn+=str
+//         for (var i = 0; i <= n; i++) {
+//             strn += str
 //         }
 //     }
 //     return strn
 // }
-// console.log(repeatString('Ha',8));
+// console.log(repeatString('Ha', 0));
 
 
 
@@ -221,6 +219,7 @@ console.log('Fumkcije');
 
 // 5. Write a function to find the position of the first occurrence of a character in a string. The result should be the position of character. If there are no occurrences of the character, the function should return -1.
 
+//for loop
 // function firstIdxOfCh(str,c) {
 //     for(var i = 0;i<str.length; i++) {
 //         if(str[i] === c) return i;
@@ -228,6 +227,17 @@ console.log('Fumkcije');
 //     return -1
 // }
 // console.log(firstIdxOfCh('aleksandar','s'));
+
+//while
+// function firstIndOfCh(str, c) {
+//     var i = 0;
+//     while (i < str.length) {
+//         if (str[i] === c) return i;
+//         else i++
+//     }
+//     return -1
+// }
+// console.log(firstIndOfCh('aleksandar', 's'));
 
 
 
@@ -548,6 +558,7 @@ console.log('Fumkcije');
 //     return square;
 // }
 // console.log(bildRectangle(15,5));
+
 
 
 
