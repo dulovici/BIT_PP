@@ -347,18 +347,40 @@ console.log('Fumkcije');
 
 // 13. Write a function to humanize a number (formats a number to a human-readable string) with the correct suffix such as 1st, 2nd, 3rd or 4th.
 // 1 -> 1st
-// 11 -> 11th         =============> PREPRAVI
+// 11 -> 11th         
 
-// function humanizeNum(n) {
-//     var num = '';
-//     if(n === 1) num = '1st';
-//     else if(n === 2) num = '2nd';
-//     else if(n === 3) num = '3rd';
-//     else num = n + 'th';
-
-//     return num;
+// function last2(n) {
+//     var str = n + '';
+//     var last2 = '';
+//     for(var i =0; i<str.length; i++) {
+//         if(i === str.length-2 || i === str.length-1) last2+=str[i];
+//     }
+//     return last2;
 // }
-// console.log(humanizeNum(1));
+
+// function humanise(n) {
+//     var str = n + '';
+//     if(last2(n) === '1') return str += 'st';
+//     else if (last2(n) === '2') return str += 'nd';
+//     else if (last2(n) === '3') return str += 'rd';
+//     else if (last2(n) === '11' || last2(n) === '12' || last2(n) === '13') return str += 'th';
+//     else if (last2(n)[1] === '1') return str += 'st';
+//     else if (last2(n)[1] === '2') return str += 'nd';
+//     else if (last2(n)[1] === '3') return str += 'rd';
+//     else return str += 'th';
+// }
+
+
+// console.log(humanise(1));
+// console.log(humanise(2));
+// console.log(humanise(3));
+// console.log(humanise(11));
+// console.log(humanise(12));
+// console.log(humanise(13));
+// console.log(humanise(21));
+// console.log(humanise(22));
+// console.log(humanise(23));
+// console.log(humanise(100500));
 
 
 
