@@ -290,7 +290,22 @@ console.log('Fumkcije');
 
 
 
-// 10.  Write a function to get the first n characters and add “...” at the end of newly created string.                    ===============>NE RAZUMEM
+// 10.  Write a function to get the first n characters and add “...” at the end of newly created string. 
+
+// var text = 'Dojcinovic';
+// function shrtStr(str,n){
+//     var output = '';
+//     for(var i = 0; i<str.length; i++) {
+//         output+=str[i];
+//         if(i === n) {
+//             output+= '...';
+//             break
+//         }
+//     }
+//     return output;
+// }
+// console.log(shrtStr(text,3));
+
 
 
 
