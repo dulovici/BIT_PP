@@ -367,16 +367,16 @@ console.log('Fumkcije');
 
 // function humanise(n) {
 //     var str = n + '';
-//     if (last2(n) === '1') return str += 'st';
-//     else if (last2(n) === '2') return str += 'nd';
-//     else if (last2(n) === '3') return str += 'rd';
-//     else if (last2(n) === '11' || last2(n) === '12' || last2(n) === '13') return str += 'th';
-//     else if (last2(n)[1] === '1') return str += 'st';
-//     else if (last2(n)[1] === '2') return str += 'nd';
-//     else if (last2(n)[1] === '3') return str += 'rd';
-//     else return str += 'th';
+//     if (last2(n) === '1') return str + 'st';
+//     else if (last2(n) === '2') return str + 'nd';
+//     else if (last2(n) === '3') return str + 'rd';
+//     else if (last2(n) === '11' || last2(n) === '12' || last2(n) === '13') return str + 'th';
+//     else if (last2(n)[1] === '1') return str + 'st';
+//     else if (last2(n)[1] === '2') return str + 'nd';
+//     else if (last2(n)[1] === '3') return str + 'rd';
+//     else return str + 'th';
 // }
-
+// //==========================================================SKRATI
 
 // console.log(humanise(1));
 // console.log(humanise(2));
