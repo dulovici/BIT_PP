@@ -1,5 +1,7 @@
 console.log('Fumkcije');
 
+// https://meet.google.com/soi-cbbo-rnw      GOOGLE MEET
+
 // 1. Write a program that calculates the maximum of two given numbers. 
 // A = 5 b = 6 output: 6
 
@@ -259,8 +261,8 @@ console.log('Fumkcije');
 
 // function stringToArr(str) {
 //     var newStr = [];
-//     for(var i = 0; i<str.length; i++) {
-//         if(str[i] === ' ') newStr[newStr.length] = null;
+//     for (var i = 0; i < str.length; i++) {
+//         if (str[i] === ' ') newStr[newStr.length] = null;
 //         else newStr[newStr.length] = str[i]
 //     }
 //     return newStr;
@@ -273,11 +275,11 @@ console.log('Fumkcije');
 // Note: A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.   =============>REWIEW
 
 // function isPrime(num) {
-//     for(var i = 2; i < num; i++)
-//       if(num % i === 0) return false;
+//     for (var i = 2; i < num; i++)
+//         if (num % i === 0) return false;
 //     return num > 1;
 // }
-// console.log(isPrime(8));
+// console.log(isPrime(7));
 
 
 
@@ -287,34 +289,34 @@ console.log('Fumkcije');
 // "My random string", "+" -> "My+random+string"
 // "My random string" -> "My-random-string"
 
-// function wordSeparator(str,s) {
+// function wordSeparator(str, s) {
 //     var word = '';
-//     for(var i = 0; i<str.length; i++) {
-//         if(str[i] === ' ' && s === undefined) word+= '-';
-//         else if(str[i] === ' ') word+= s;
-//         else word+= str[i]
+//     if (s === undefined) s = '-';
+//     for (var i = 0; i < str.length; i++) {
+//         if (str[i] === ' ') word += s;
+//         else word += str[i]
 //     }
 //     return word;
 // }
-// console.log(wordSeparator('Jedan dva tri cetri','_'));
+// console.log(wordSeparator('Jedan dva tri cetri', '_'));
 
 
 
 // 10.  Write a function to get the first n characters and add “...” at the end of newly created string. 
 
 // var text = 'Dojcinovic';
-// function shrtStr(str,n){
+// function shrtStr(str, n) {
 //     var output = '';
-//     for(var i = 0; i<str.length; i++) {
-//         output+=str[i];
-//         if(i === n) {
-//             output+= '...';
+//     for (var i = 0; i < str.length; i++) {
+//         output += str[i];
+//         if (i === n) {
+//             output += '...';
 //             break
 //         }
 //     }
 //     return output;
 // }
-// console.log(shrtStr(text,3));
+// console.log(shrtStr(text, 3));
 
 
 
@@ -322,11 +324,14 @@ console.log('Fumkcije');
 // 11. Write a function that converts an array of strings into an array of numbers. Filter out all non-numeric values.
 // ["1", "21", undefined, "42", "1e+3", Infinity] -> [1, 21, 42, 1000]
 
-// var test = ["1", "21", undefined, "42", "1e+3", Infinity];
+// var test = ["1", "21", undefined, "42", "1e+3", Infinity, 'str'];
+
 // function arrOfNumsGen(arr) {
 //     var nums = [];
-//     for(var i = 0; i < arr.length; i++) {
-//         if(typeof arr[i] === 'string') nums[nums.length] = Number(arr[i]);
+//     for (var i = 0; i < arr.length; i++) {
+//         var c = arr[i] * 1;
+//         if (c !== c || c === Infinity || c === -Infinity) continue;
+//         nums[nums.length] = c
 //     }
 //     return nums;
 // }
@@ -352,15 +357,15 @@ console.log('Fumkcije');
 // function last2(n) {
 //     var str = n + '';
 //     var last2 = '';
-//     for(var i =0; i<str.length; i++) {
-//         if(i === str.length-2 || i === str.length-1) last2+=str[i];
+//     for (var i = 0; i < str.length; i++) {
+//         if (i === str.length - 2 || i === str.length - 1) last2 += str[i];
 //     }
 //     return last2;
 // }
 
 // function humanise(n) {
 //     var str = n + '';
-//     if(last2(n) === '1') return str += 'st';
+//     if (last2(n) === '1') return str += 'st';
 //     else if (last2(n) === '2') return str += 'nd';
 //     else if (last2(n) === '3') return str += 'rd';
 //     else if (last2(n) === '11' || last2(n) === '12' || last2(n) === '13') return str += 'th';
