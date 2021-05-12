@@ -339,14 +339,16 @@ console.log('Fumkcije');
 
 
 
-// 12. Write a function to calculate how many years there are left until retirement based on the year of birth. Retirement for men is at age of 65 and for women at age of 60. If someone is already retired, a proper message should be displayed.
+// 12. Write a function to calculate how many years there are left until retirement based on the year of birth. Retirement for men is at age of 65 and for women at age of 60. If someone is already retired, a proper message should be displayed.   ===> PREPRAVI
 
-// function yrsToGo(byear) {
-//     var yearToGo = 2022 - byear;
-//     if (yearToGo >= 65) return 'Congratulations you dont need to work anymore!';
-//     else return 'Go to work you lazy cunt.'
+// function yrsToGo(byear, sex) {
+//     var age = 2022 - byear;
+//     var limit = sex === 'm' ? 65 : sex === 'f' ? 60 : 'y';
+//     if (age >= limit) return 'Congradulations you are retired';
+//     else if (age <= limit) return 'You need to work more.';
+//     else return 'Are you male or female?'
 // }
-// console.log(yrsToGo(1942));
+// console.log(yrsToGo(1952, 'f'));
 
 
 
