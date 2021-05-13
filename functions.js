@@ -406,7 +406,7 @@ console.log('Fumkcije');
 //     }
 //     return output;
 // }
-// console.log(pushStr('Devic Milenko', '*', 6));
+// console.log(pushStr('Devic Milenko', 'JS'));
 
 
 
@@ -417,8 +417,9 @@ console.log('Fumkcije');
 
 // function joinElements(arr) {
 //     var output = '';
-//     for(var i = 0; i<arr.length; i++) {
-//         if((typeof arr[i] === 'number' || typeof arr[i] === 'string' ) && arr[i] + '' !== 'NaN') output += arr[i] + ' ';
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] === undefined || arr[i] === null || arr[i] === Infinity || arr[i] !== arr[i]) continue;
+//         output += arr[i] + ' ';
 //     }
 //     return output;
 // }
@@ -433,8 +434,8 @@ console.log('Fumkcije');
 
 // function filterFalsy(arr) {
 //     var output = [];
-//     for(var i = 0; i<arr.length; i++) {
-//         if(arr[i]) output[output.length] = arr[i];
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i]) output[output.length] = arr[i];
 //     }
 //     return output;
 // }
@@ -449,7 +450,7 @@ console.log('Fumkcije');
 // function reverseNumber(n) {
 //     var input = n + '';
 //     var output = '';
-//     for(var i = input.length-1; i >= 0; i--) output+= input[i];
+//     for (var i = input.length - 1; i >= 0; i--) output += input[i];
 
 //     return Number(output)
 // }
@@ -463,15 +464,15 @@ console.log('Fumkcije');
 // [7, 9, 0, -2], 2 -> [0, -2]  
 
 // var test = [7, 9, 0, -2];
-// function returnLastEl(arr,n) {
-//     if(n === undefined) return arr[arr.length-1];
+// function returnLastEl(arr, n) {
+//     if (n === undefined || n === 1) return arr[arr.length - 1];
 //     var output = [];
-//     for(var i = n; i<arr.length; i++) {
+//     for (var i = arr.length - n; i < arr.length; i++) {
 //         output[output.length] = arr[i]
 //     }
 //     return output;
 // };
-// console.log(returnLastEl(test,2));
+// console.log(returnLastEl(test, 3));
 
 
 
@@ -480,15 +481,15 @@ console.log('Fumkcije');
 // 2, "none" -> ["none", "none"]
 // 2 -> [null, null] 
 
-// function arrGen(t,e) {
+// function arrGen(t, e) {
 //     var output = [];
-//     for(var i = 0; i < t; i++) {
-//         if(e === undefined) output[output.length] = null
+//     for (var i = 0; i < t; i++) {
+//         if (e === undefined) output[output.length] = null
 //         else output[output.length] = e;
 //     }
 //     return output;
 // }
-// console.log(arrGen(6,0));
+// console.log(arrGen(6, 0));
 
 
 
@@ -497,6 +498,20 @@ console.log('Fumkcije');
 // Note: According to Wikipedia: In number theory, a perfect number is a positive integer that is equal to the sum of its proper positive divisors, that is, the sum of its positive divisors excluding the number itself (also known as its aliquot sum). Equivalently, a perfect number is a number that is half the sum of all of its positive divisors (including itself).
 // E.g.: The first perfect number is 6, because 1, 2 and 3 are its proper positive divisors, and 1 + 2 + 3 = 6. 
 // Equivalently, the number 6 is equal to half the sum of all its positive divisors: (1 + 2 + 3 + 6) / 2 = 6. The next perfect number is 28 = 1 + 2 + 4 + 7 + 14. This is followed by the perfect numbers 496 and 8128.
+
+// function isPerfect(n) {
+//     if (n < 1) return false
+//     var divisors = 0;
+//     for (var i = 0; i <= n / 2; i++) {
+//         if (n % i === 0) {
+//             divisors += i;
+//         }
+//     }
+//     return divisors === n;
+// }
+// console.log(isPerfect(2));
+
+
 
 // 8. Write a function to find a word within a string.
 // 'The quick brown fox', 'fox' -> "'fox' was found 1 times"
@@ -514,10 +529,20 @@ console.log('Fumkcije');
 // }
 // console.log(findWord(test2,'bb'));          =============> VARAO SAM, ES6 RESENJE.
 
+//RESENJE 2
+
+// function findWrd(sen,wor) {
+
+// }
+
 
 
 // 9. Write a function to hide email address.
 // "myemailaddress@bgit.rs" -> "mye...@bgit.rs"
+
+// function hideEmail(mail) {
+
+// }
 
 // 10. Write a program to find the most frequent item of an array.
 // [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3].
@@ -581,7 +606,6 @@ console.log('Fumkcije');
 //     return square;
 // }
 // console.log(bildRectangle(15,5));
-
 
 
 
