@@ -397,22 +397,16 @@ console.log('Fumkcije');
 // "My random string", "JS " -> "JS My random string"
 // "My random string", "JS ", 10 -> "My random JS string"
 
-// function pushString(str,wor,p) {
-//     var word = '';
-//     if(p === undefined) {
-//         word += wor + ' ';
-//         for(var i = 0; i < str.length; i++) word += str[i]
+// function pushStr(str, wor, p) {
+//     var output = '';
+//     if (p === undefined) output += wor + ' ';
+//     for (var i = 0; i < str.length; i++) {
+//         if (i === p) output += wor;
+//         output += str[i];
 //     }
-//     else {
-//         for(var i = 0; i < str.length; i++) {
-//             if(i === p) word += wor;
-//             word += str[i];
-//         }
-//     }
-//     return word;
+//     return output;
 // }
-// console.log(pushString('Devic Milenko', '*', 5));
-
+// console.log(pushStr('Devic Milenko', '*', 6));
 
 
 
