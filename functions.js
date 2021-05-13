@@ -517,8 +517,9 @@ console.log('Fumkcije');
 // 'The quick brown fox', 'fox' -> "'fox' was found 1 times"
 // 'aa bb cc dd aa', 'aa' -> "'aa' was found 2 times"
 
-// var test = 'The quick brown fox';
-// var test2 = 'aa bb cc dd aa';
+var test = 'The quick brown fox';
+var test2 = 'aa bb cc dd aa';
+
 // function findWord(str,w) {
 //     var arr = str.split(' ');
 //     var cnt = 0;
@@ -531,9 +532,23 @@ console.log('Fumkcije');
 
 //RESENJE 2
 
-// function findWrd(sen,wor) {
+// function findWrd(sen,word) {
+//     var arr = [];
+//     var cnt = 0;
+//     var srcIndx = 0;
+//     for(var i = 0; i < sen.length; i++) {
+//         if (sen[i] === word[srcIndx]) {
+//             srcIndx++
+//             if (srcIndx === word.length) {
+//                 srcIndx = 0;
+//                 cnt++
+//             }
+//         }
+//     }
+//     return cnt;
 
 // }
+// console.log(findWrd(test2, 'aa'));
 
 
 
