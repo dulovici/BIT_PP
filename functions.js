@@ -572,10 +572,44 @@ console.log('Fumkcije');
 // Input: [ 3, 500, 12, 149, 53, 414, 1, 19 ]
 // Output: [ 3, 1, 12, 149, 53, 414, 500, 19 ]
 
-// 2. Use the following array to make a new one by dividing its values by two and adding 5. If
-// a given element&#39;s value is 0, change it to 20.
-// Input: [ 3, 500, -10, 149, 53, 414, 1, 19 ]
+// var test = [ 3, 500, 12, 149, 53, 414, 1, 19 ];
+// function minMax(arr){
+//     var output = [];
+//     var max = -Infinity;
+//     var min = Infinity;
+//     for (var i = 0; i<arr.length; i++) {
+//         if(arr[i] > max) max = arr[i];
+//         if(arr[i] < min) min = arr[i];
+//     }
+//     for (var i = 0; i<arr.length; i++) {
+//         if(arr[i] === max) output[output.length] = min;
+//         else if (arr[i] === min) output[output.length] = max;
+//         else output[output.length] = arr[i]
+//     }
+//     return output;
+// }
+// console.log(test);
+// console.log(minMax(test));
+
+
+
+
+// 2. Use the following array to make a new one by dividing its values by two and adding 5. If a given element's value is 0, change it to 20.
+// Input:  [ 3, 500, -10, 149, 53, 414, 1, 19 ]
 // Output: [ 6.5, 255, 20, 79.5, 31.5, 212, 5.5, 14.5 ]
+
+// var test = [ 3, 500, -10, 149, 53, 414, 1, 19 ];
+// function devider(arr) {
+//     var output = [];
+//     for(var i = 0; i<arr.length; i++) {
+//         if(arr[i] / 2 + 5 === 0) output[output.length] = 20;
+//         else output[output.length] = arr[i] / 2 + 5;
+//     }
+//     return output;
+// }
+// console.log(devider(test));
+
+
 
 // 3. 
 
@@ -583,6 +617,21 @@ console.log('Fumkcije');
 // subtracts all the odd numbers 1 to 500 from the calculated sum. The result should then
 // be multiplied by 12.5 and displayed in console.
 // Output: 2350000
+
+// function evenOdd() {
+//     var even = 0;
+//     var odd = 0;
+//     for(var i = 0; i <= 1000; i++) {
+//         if(i % 2 === 0) even += i; 
+//     }
+//     for(var i = 0; i <= 500; i++) {
+//         if(i % 2 !== 0) odd += i;
+//     }
+//     return (even-odd)*12.5
+// }
+// console.log(evenOdd());
+
+
 
 // 5. Define a 10 element array. Take the first two letters from every string (that has at least 2 letters) in the array and create a new string from them. Print it out in the console.
 // Input: [ "M", "Anne", 12, "Steve", "Joe", "John", "David", "Mark", true, "A" ]
