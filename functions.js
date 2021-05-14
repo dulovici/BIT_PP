@@ -530,7 +530,7 @@ console.log('Fumkcije');
 // }
 // console.log(findWord(test2,'bb'));          =============> VARAO SAM, ES6 RESENJE.
 
-//RESENJE 2
+//RESENJE 2  ======> Kako da odvaja cele reči?
 
 // var test = 'The quick brown fox';
 // var test2 = 'aa bb cc dd aa';
@@ -560,12 +560,27 @@ console.log('Fumkcije');
 
 
 
+
 // 9. Write a function to hide email address.
 // "myemailaddress@bgit.rs" -> "mye...@bgit.rs"
 
+// var test = 'zoki@gmail.com';
 // function hideEmail(mail) {
-
+//     var out1 = mail[0] + mail[1] + mail[2] + '...';
+//     if(mail[3] === '@') out1 = mail[0] + mail[1] + '...';
+//     var out2 = '';
+//     for(var i = 0; i < mail.length; i++) {
+//         if(mail[i] === '@') {
+//             for(var j = 0; i<mail.length; i++) {
+//                 out2 += mail[i]
+//             }
+//         }
+//     }
+//     return out1 + out2;
 // }
+// console.log(hideEmail(test));
+
+
 
 // 10. Write a program to find the most frequent item of an array.
 // [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3].
