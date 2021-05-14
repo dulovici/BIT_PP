@@ -535,19 +535,19 @@ console.log('Fumkcije');
 // var test = 'The quick brown fox';
 // var test2 = 'aa bb cc dd aa';
 
-// function findWrd(sen,word) {
+// function findWrd(sen, word) {
 //     var arr = [];
-//     var welem = '';   
+//     var welem = '';
 //     var cnt = 0;
 //     var srcIndx = 0;
 
-//     for(var i = 0; i < sen.length; i++) {
+//     for (var i = 0; i < sen.length; i++) {
 //         if (sen[i] === word[srcIndx]) {
 //             srcIndx++
 //             welem += sen[i]
 //             if (srcIndx === word.length) {
 //                 arr[arr.length] = welem;
-//                 welem = '';  
+//                 welem = '';
 //                 srcIndx = 0;
 //                 cnt++
 //             }
@@ -556,7 +556,7 @@ console.log('Fumkcije');
 //     console.log(arr);
 //     return cnt;
 // }
-// console.log(findWrd(test2, 'aa'));   
+// console.log(findWrd(test, 'row'));
 
 
 
