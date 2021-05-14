@@ -683,6 +683,26 @@ console.log('Fumkcije');
 // Input:  eye  | Geek  | a nut for a jar of tuna
 // Output: true | false | true
 
+// var test1 = 'Geek';
+// var test2 = 'a nut for a jar of tuna';
+
+// function isPalidrome(str) {
+//     var normal = ''
+//     var revOrd = '';
+//     for (var i = 0; i<str.length; i++){
+//         if(str[i] === ' ') continue;
+//         normal += str[i];
+//     }
+//     for(var i = str.length - 1; i >= 0; i--){
+//         if(str[i] === ' ') continue;
+//         revOrd += str[i]
+//     }
+//     return normal === revOrd;
+// }
+// console.log(isPalidrome(test1));
+
+
+
 // 10. Write a program that calculates the greatest common divisor of two integers. Note: The greatest common divisor of two non-zero integers is the greatest positive number that divides both numbers with no remainder.
 // Input:  192 42 | 81 9
 // Output: 6      | 9
