@@ -532,23 +532,31 @@ console.log('Fumkcije');
 
 //RESENJE 2
 
+// var test = 'The quick brown fox';
+// var test2 = 'aa bb cc dd aa';
+
 // function findWrd(sen,word) {
 //     var arr = [];
+//     var welem = '';   
 //     var cnt = 0;
 //     var srcIndx = 0;
+
 //     for(var i = 0; i < sen.length; i++) {
 //         if (sen[i] === word[srcIndx]) {
 //             srcIndx++
+//             welem += sen[i]
 //             if (srcIndx === word.length) {
+//                 arr[arr.length] = welem;
+//                 welem = '';  
 //                 srcIndx = 0;
 //                 cnt++
 //             }
 //         }
 //     }
+//     console.log(arr);
 //     return cnt;
-
 // }
-// console.log(findWrd(test2, 'aa'));   ====> PREPRAVI RESENJE 1 NA OVU FORU BEZ SPLIT
+// console.log(findWrd(test2, 'aa'));   
 
 
 
@@ -717,9 +725,6 @@ console.log('Fumkcije');
 //     return square;
 // }
 // console.log(bildRectangle(15,5));
-
-
-
 
 
 
