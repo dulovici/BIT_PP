@@ -567,11 +567,11 @@ console.log('Fumkcije');
 // var test = 'zoki@gmail.com';
 // function hideEmail(mail) {
 //     var out1 = mail[0] + mail[1] + mail[2] + '...';
-//     if(mail[3] === '@') out1 = mail[0] + mail[1] + '...';
+//     if (mail[3] === '@') out1 = mail[0] + mail[1] + '...';
 //     var out2 = '';
-//     for(var i = 0; i < mail.length; i++) {
-//         if(mail[i] === '@') {
-//             for(var j = 0; i<mail.length; i++) {
+//     for (var i = 0; i < mail.length; i++) {
+//         if (mail[i] === '@') {
+//             for (var j = 0; i < mail.length; i++) {
 //                 out2 += mail[i]
 //             }
 //         }
@@ -580,10 +580,20 @@ console.log('Fumkcije');
 // }
 // console.log(hideEmail(test));
 
+//====================================== RESI SA FLEGOM.
+
+
+
 
 
 // 10. Write a program to find the most frequent item of an array.
 // [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3].
+
+// var test = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+
+
+
+
 
 //===================================================== SLIDE 4 ===================================================================
 
@@ -595,17 +605,17 @@ console.log('Fumkcije');
 // Input: [ 3, 500, 12, 149, 53, 414, 1, 19 ]
 // Output: [ 3, 1, 12, 149, 53, 414, 500, 19 ]
 
-// var test = [ 3, 500, 12, 149, 53, 414, 1, 19 ];
-// function minMax(arr){
+// var test = [3, 500, 12, 149, 53, 414, 1, 19];
+// function minMax(arr) {
 //     var output = [];
 //     var max = -Infinity;
 //     var min = Infinity;
-//     for (var i = 0; i<arr.length; i++) {
-//         if(arr[i] > max) max = arr[i];
-//         if(arr[i] < min) min = arr[i];
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] > max) max = arr[i];
+//         if (arr[i] < min) min = arr[i];
 //     }
-//     for (var i = 0; i<arr.length; i++) {
-//         if(arr[i] === max) output[output.length] = min;
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] === max) output[output.length] = min;
 //         else if (arr[i] === min) output[output.length] = max;
 //         else output[output.length] = arr[i]
 //     }
@@ -613,7 +623,6 @@ console.log('Fumkcije');
 // }
 // console.log(test);
 // console.log(minMax(test));
-
 
 
 
