@@ -669,15 +669,51 @@ console.log('Fumkcije');
 // Input: [ "M", "Anne", 12, "Steve", "Joe", "John", "David", "Mark", true, "A" ]
 // Output: AnStJoJoDaMa
 
+// var test = [ "M", "Anne", 12, "Steve", "Joe", "John", "David", "Mark", true, "A" ];
+
+// function stupidFunct(arr) {
+//     var output = '';
+//     for (var i = 0; i<test.length; i++) {
+//         if(arr[i].length > 2) {
+//             output += arr[i][0] + arr[i][1]
+//         }
+//     }
+//     return output;
+// }
+// console.log(stupidFunct(test));
+
+
+
 // 6. Write a program that takes a string and prints its characters out in reversed order in the console.
 // Input:  Belgrade Institute of Technology
 // Output: ygolonhceT fo etutitsnI edargleB
+
+// var test = 'Belgrade Institute of Technology';
+
+// function obrniStr(str) {
+//     var output = '';
+//     for(var i = str.length - 1; i>= 0 ; i--) output += str[i];
+//     return output;
+// }
+// console.log(obrniStr(test));
+
+
 
 // 7. Write a program that displays all the combinations of two numbers between 1 and 7. Don't display two of the same numbers at the same time. Display the number of possible combinations, as well. (E.g. (1.2),(2,1) is allowed, but not (1,1), (2,2)...).
 
 // 8. Write a program that checks if the entered number is a prime number (i.e. divisible only by 1 and by itself).
 // Input:  17    | 15
 // Output: true  | false
+
+// function isPrime(n) {
+//     if(n === 2) return true
+//     for(let i = 2; i < n; i++) {
+//         if (n % i === 0) return false;
+//         return true;
+//     }
+// }
+// console.log(isPrime(2));
+
 
 // 9. Check if a given string is a palindrome (spaces are ignored).
 // Input:  eye  | Geek  | a nut for a jar of tuna
