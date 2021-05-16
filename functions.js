@@ -582,6 +582,23 @@ console.log('Fumkcije');
 
 //====================================== RESI SA FLEGOM.
 
+// var test = 'zoki@gmail.com';
+// function hideEmail(str) {
+//     var output = '';
+//     var flag = true;
+//     for(var i = 0; i<str.length; i++) {
+//         if(flag) output += str[i];
+//         if(i === 2) {
+//             flag = false;
+//             output+= '...'
+//         }
+//         if(str[i] === '@') flag = true;
+        
+//     }
+//     return output;
+// }
+// console.log(hideEmail('igordulovic@gmail.com'));
+
 
 
 
