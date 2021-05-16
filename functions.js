@@ -701,6 +701,10 @@ console.log('Fumkcije');
 
 // 7. Write a program that displays all the combinations of two numbers between 1 and 7. Don't display two of the same numbers at the same time. Display the number of possible combinations, as well. (E.g. (1.2),(2,1) is allowed, but not (1,1), (2,2)...).
 
+function combinations(a,b) {
+
+}
+
 // 8. Write a program that checks if the entered number is a prime number (i.e. divisible only by 1 and by itself).
 // Input:  17    | 15
 // Output: true  | false
@@ -743,6 +747,24 @@ console.log('Fumkcije');
 // Input:  192 42 | 81 9
 // Output: 6      | 9
 
+// function commonDevider(a,b) {
+//     var output = 0;
+//     if(a>b) {
+//         for(var i = 2; i<a; i++) {
+//             if(a%i === 0 && b%i === 0 && i > output) output = i
+//         }
+//     }
+//     if(b>a) {
+//         for(var i = 2; i<b; i++) {
+//             if(a%i === 0 && b%i === 0 && i > output) output = i
+//         }
+//     }
+//     return output;
+// }
+// console.log(commonDevider(81,9));
+// console.log(commonDevider(192,42));
+// console.log(commonDevider(9,81));
+// console.log(commonDevider(42,192));
 
 
 
