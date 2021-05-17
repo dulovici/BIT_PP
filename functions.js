@@ -593,7 +593,7 @@ console.log('Fumkcije');
 //             output+= '...'
 //         }
 //         if(str[i] === '@') flag = true;
-        
+
 //     }
 //     return output;
 // }
@@ -766,16 +766,18 @@ console.log('Fumkcije');
 
 
 
+
+
 // 5. Define a 10 element array. Take the first two letters from every string (that has at least 2 letters) in the array and create a new string from them. Print it out in the console.
 // Input: [ "M", "Anne", 12, "Steve", "Joe", "John", "David", "Mark", true, "A" ]
 // Output: AnStJoJoDaMa
 
-// var test = [ "M", "Anne", 12, "Steve", "Joe", "John", "David", "Mark", true, "A" ];
+// var test = ["M", "Anne", 12, "Steve", "Joe", "John", "David", "Mark", true, "A"];
 
 // function stupidFunct(arr) {
 //     var output = '';
-//     for (var i = 0; i<test.length; i++) {
-//         if(arr[i].length > 2) {
+//     for (var i = 0; i < test.length; i++) {
+//         if (arr[i].length >= 2) {
 //             output += arr[i][0] + arr[i][1]
 //         }
 //     }
@@ -793,7 +795,7 @@ console.log('Fumkcije');
 
 // function obrniStr(str) {
 //     var output = '';
-//     for(var i = str.length - 1; i>= 0 ; i--) output += str[i];
+//     for (var i = str.length - 1; i >= 0; i--) output += str[i];
 //     return output;
 // }
 // console.log(obrniStr(test));
@@ -802,26 +804,26 @@ console.log('Fumkcije');
 
 // 7. Write a program that displays all the combinations of two numbers between 1 and 7. Don't display two of the same numbers at the same time. Display the number of possible combinations, as well. (E.g. (1.2),(2,1) is allowed, but not (1,1), (2,2)...).
 
-// function combinations(a,b) {
-//     if(a<b) {
-//         for(var i = a; i <= b; i++) {
-//             for(var j = a; j<=b; j++) {
-//                 if(i === j) continue
-//                 else console.log(i,j);
+// function combinations(a, b) {
+//     if (a < b) {
+//         for (var i = a; i <= b; i++) {
+//             for (var j = a; j <= b; j++) {
+//                 if (i === j) continue
+//                 else console.log(i, j);
 //             }
 //         }
 //     }
-//     if(a>b) {
-//         for(var i = b; i <= a; i++) {
-//             for(var j = b; j<=a; j++) {
-//                 if(i === j) continue
-//                 else console.log(i,j);
+//     if (a > b) {
+//         for (var i = b; i <= a; i++) {
+//             for (var j = b; j <= a; j++) {
+//                 if (i === j) continue
+//                 else console.log(i, j);
 //             }
 //         }
 //     }
 
 // }
-// combinations(9,4)
+// combinations(9, 4)
 
 
 
@@ -867,24 +869,25 @@ console.log('Fumkcije');
 // Input:  192 42 | 81 9
 // Output: 6      | 9
 
-// function commonDevider(a,b) {
+// function commonDevider(a, b) {
 //     var output = 0;
-//     if(a>b) {
-//         for(var i = 2; i<a; i++) {
-//             if(a%i === 0 && b%i === 0 && i > output) output = i
+//     if (a > b) {
+//         for (var i = 2; i < a; i++) {
+//             if (a % i === 0 && b % i === 0) output = i
 //         }
 //     }
-//     if(b>a) {
-//         for(var i = 2; i<b; i++) {
-//             if(a%i === 0 && b%i === 0 && i > output) output = i
+//     if (b > a) {
+//         for (var i = 2; i < b; i++) {
+//             if (a % i === 0 && b % i === 0) output = i
 //         }
 //     }
 //     return output;
+
 // }
-// console.log(commonDevider(81,9));
-// console.log(commonDevider(192,42));
-// console.log(commonDevider(9,81));
-// console.log(commonDevider(42,192));
+// console.log(commonDevider(81, 9));
+// console.log(commonDevider(192, 42));
+// console.log(commonDevider(338, 598));
+// console.log(commonDevider(338, 592));
 
 
 
