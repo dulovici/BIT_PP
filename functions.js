@@ -889,6 +889,10 @@ console.log('Fumkcije');
 // console.log(commonDevider(338, 598));
 // console.log(commonDevider(338, 592));
 
+//===================================================== SLIDE 6 ===================================================================
+
+//===================================================== SLIDE 7 ===================================================================
+
 
 
 
@@ -904,53 +908,15 @@ console.log('Fumkcije');
 //=====================================================CLASSWORK===================================================================
 
 
-// function buildRow(n) {
-//     var row = '';
-//     for (var i = 0; i < n; i++) {
-//         row += '* '
-//     }
-//     return row;
-// };
+// var btn = document.querySelector('.btn');
+// btn.addEventListener('click', function (e) {
+//     console.log(e);
+// })
 
-// function bildSquare(n) {
-//     var squ = '';
-//     for (var i = 0; i < 4; i++) {
-//         squ += buildRow(n) + '\n'
-//     }
-//     return squ;
+// var obj = {
+//     name: 'Zoki',
+//     age: 28,
+//     hobi: ['svirka', 'pivo', 'fudbal']
+
 // }
-
-// console.log(bildSquare(5));
-// console.log(bildSquare(10));
-
-
-
-//Buld rectangle. <<========
-// function buildRow(n) {
-//     var row = '';
-//     for(var i =0; i<n; i++) {
-//         row += '*'
-//     }
-//     return row;
-// }
-// function buildCol(n) {
-//     var col = '';
-//     for(var i = 0; i<n; i++){
-//         if(i === 0 || i === n-1) col += '*';
-//         else col += ' ';
-//     }
-//     return col;
-// }
-// function bildRectangle(n,e) {
-//     var square = '';
-//     for(var i = 0; i<e; i++) {
-//         if(i === 0 || i === e-1) square += buildRow(n) + '\n'
-//         else square += buildCol(n) + '\n'
-//     }
-//     return square;
-// }
-// console.log(bildRectangle(15,5));
-
-
-
-
+// console.log(obj.hobi);
