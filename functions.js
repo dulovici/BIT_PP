@@ -891,6 +891,7 @@ console.log('Fumkcije');
 
 //===================================================== SLIDE 6 ===================================================================
 
+
 //===================================================== SLIDE 7 ===================================================================
 
 
@@ -908,15 +909,84 @@ console.log('Fumkcije');
 //=====================================================CLASSWORK===================================================================
 
 
-// var btn = document.querySelector('.btn');
-// btn.addEventListener('click', function (e) {
-//     console.log(e);
-// })
+// var bestCoffe = {
+//     name: 'Nikaragua',
+//     strength: 'Medium',
+//     flavour: 'Coffe',
+//     milk: false,
+//     sugger: false
+// };
 
-// var obj = {
-//     name: 'Zoki',
-//     age: 28,
-//     hobi: ['svirka', 'pivo', 'fudbal']
-
+// var bestMovie = {
+//     movie: 'Underground',
+//     actors: ['Petar Popara', 'Marko Dren'],
+//     director: 'Emir Kusturica',
+//     genre: 'Remek Delo',
+//     popularity: 100
 // }
-// console.log(obj.hobi);
+
+
+// function createProject() {
+//     var project = {
+//         description: 'Vezba',
+//         language: 'JS',
+//         repo: 'www.pera.com',
+//         dev: true,
+//         printRepo: function () {
+//             console.log(project.repo);
+//         },
+//         isJS: function () {
+//             if (project.language === 'JS') return true;
+//             return false;
+//         },
+//         isDev: function () {
+//             return project.dev;
+//         }
+//     }
+//     return project;
+// }
+// var pera = createProject();
+
+// pera.printRepo();
+// console.log(pera.isJS());
+// console.log(pera.isDev());
+
+
+// function createRecepie() {
+//     var recepie = {
+//         name: 'Chicken Tikka Masala',
+//         type: 'Indian',
+//         complexity: 5,
+//         ingridients: ['Chicken', 'Tomato', 'Rajs', 'Ghee'],
+//         prepTimeMin: 45,
+//         instruction: 'Cook it with love',
+//         printIngridients: function () {
+//             console.log(recepie.ingridients);
+//         },
+//         isFastFood: function () {
+//             return recepie.prepTimeMin <= 15;
+//         },
+//         changeType: function (newType) {
+//             recepie.type = newType;
+//         },
+//         deleteIngridient: function (ingridient) {
+//             var newList = [];
+//             for (var i = 0; i < recepie.ingridients.length; i++) {
+//                 if (recepie.ingridients[i] !== ingridient) {
+//                     newList[newList.length] = recepie.ingridients[i]
+//                 }
+//             }
+//             recepie.ingridients = newList;
+//         }
+//     };
+//     return recepie;
+// }
+
+// var recept = createRecepie()
+
+// console.log(recept);
+
+// recept.deleteIngridient('Rajs')
+// recept.changeType('Italian')
+// console.log(recept);
+// console.log(recept.isFastFood());
