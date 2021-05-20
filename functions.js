@@ -891,6 +891,29 @@ console.log('Fumkcije');
 
 //===================================================== SLIDE 6 ===================================================================
 
+// 1. Write a function to count vowels in a provided string. Vowels are a, e, i, o, and u as well as A, E, I, O, and U. 
+
+// var test = 'Vatreni Poljubac'
+// function countVowels(str) {
+//     var cnt = 0;
+//     for (var i = 0; i < str.length; i++) {
+//         if (
+//             str[i] === 'a' ||
+//             str[i] === 'A' ||
+//             str[i] === 'e' ||
+//             str[i] === 'E' ||
+//             str[i] === 'i' ||
+//             str[i] === 'I' ||
+//             str[i] === 'o' ||
+//             str[i] === 'O' ||
+//             str[i] === 'u' ||
+//             str[i] === 'U') {
+//             cnt++
+//         }
+//     }
+//     return cnt;
+// }
+// console.log(countVowels(test));
 
 //===================================================== SLIDE 7 ===================================================================
 
@@ -993,19 +1016,30 @@ console.log('Fumkcije');
 
 
 
-var btn1 = document.querySelector('.btn1');
-var btn2 = document.querySelector('.btn2');
+// var btn1 = document.querySelector('.btn1');
+// var btn2 = document.querySelector('.btn2');
+// var btn3 = document.querySelector('.btn3');
 
-function createCounter(param) {
-    var counter = 0;
+// function createCounter(param) {
+//     var counter = 0;
+//     var obj = {
+//         increse: function () {
+//             counter += param
+//             console.log(counter);
+//         },
+//         reset: function () {
+//             counter = 0;
+//             console.log(counter);
+//         }
+//     }
 
-    return function () {
-        counter += param
-        console.log(counter);
-    }
-}
-btn1.addEventListener('click', createCounter(5));
-btn2.addEventListener('click', createCounter(1));
+//     if (param === 0) return obj.reset
+//     return obj.increse
+// }
+// btn1.addEventListener('click', createCounter(5));
+// btn2.addEventListener('click', createCounter(1));
+// btn3.addEventListener('click', createCounter(0));
+
 // how to reset?
 
 
