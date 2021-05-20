@@ -990,3 +990,19 @@ console.log('Fumkcije');
 // recept.changeType('Italian')
 // console.log(recept);
 // console.log(recept.isFastFood());
+
+
+
+var btn1 = document.querySelector('.btn1');
+var btn2 = document.querySelector('.btn2');
+
+function createCounter() {
+    var counter = 0;
+
+    return function() {
+        counter ++
+        console.log(counter);
+    }
+}
+btn1.addEventListener('click', createCounter());
+btn2.addEventListener('click', createCounter());
