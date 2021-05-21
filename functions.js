@@ -1096,27 +1096,31 @@ var btn3 = document.querySelector('.btn3');
 
 function createCounter(param) {
     var counter = 0;
-    btn3.addEventListener('click', function(){
-        counter = 0;
-        // console.log(couner); ???
-    });
-
-    return function () {
+    function increaseCounter() {
         counter += param
         console.log(counter);
     }
+    function resetCounter() {
+        counter = 0
+        console.log(counter);
+    }
+    return [increaseCounter, resetCounter]
 }
 
-btn1.addEventListener('click', createCounter(5));
-btn2.addEventListener('click', createCounter(1));
+var counter1 = createCounter(5)
+var counter2 = createCounter(1)
+var increaseCounter1 = counter1[0]
+var increaseCounter2 = counter2[0]
+var resetCounter1 = counter1[1]
+var resetCounter2 = counter2[1]
 
 
-
-
-
-
-
-
+btn1.addEventListener('click', increaseCounter1);
+btn2.addEventListener('click', increaseCounter2);
+btn3.addEventListener('click', function () {
+    resetCounter1()
+    resetCounter2()
+});
 
 
 
