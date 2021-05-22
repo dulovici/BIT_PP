@@ -676,15 +676,49 @@ console.log('Fumkcije');
 // Input array: [3, 11, -5, -3, 2]
 // Output: 16
 
+// var test = [3, 11, -5, -3, 2];
+// function sumOfPositive(arr){
+//     return arr.filter(e => e>0).reduce((a,c) => a+c);
+// }
+// console.log(sumOfPositive(test));
+
+
+
 // 6.Write a program that checks if a given array is symmetric. An array is symmetric if it can be read the same way both from the left and the right hand side.   
 // Input array: [2, 4, -2, 7, -2, 4, 2]
 // Output: The array is symmetric.
 // Input array: [3, 4, 12, 8]
 // Output: The array isn’t symmetric.
 
+// var test1 = [2, 4, -2, 7, -2, 4, 2];
+// var test2 = [3, 4, 12, 8];
+
+// function isSym(arr) {
+//     return arr.toString() === arr.reverse().toString()
+// }
+
+// console.log(isSym(test1));
+
+
+
+
 // 7.Write a program that intertwines two arrays. You can assume the arrays are of the same length. 
 // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
 // Output array: [4, 3, 5, 8, 6, 11, 2, 9]
+
+// var test1 = [4, 5, 6, 2];
+// var test2 = [3, 8, 11, 9];
+
+// function shufle(arr1,arr2) {
+//     var output = [];
+//     for(var i = 0;i < arr1.length; i++) {
+//         output.push(arr1[i]);
+//         output.push(arr2[i]);
+//     }
+//     return output;
+// }
+// console.log(shufle(test1,test2));
+
 
 // 8.Write a program that concatenates two arrays. 
 // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
@@ -936,6 +970,17 @@ console.log('Fumkcije');
 
 // 3.Write a function that rotates a list by k elements.
 // For example [1,2,3,4,5,6] rotated by two becomes [3,4,5,6,1,2]
+
+// var test = [1,2,3,4,5,6]
+
+// function rotate(arr,r) {
+//     var sp = arr.splice(r)
+//     return sp.concat(arr)
+// }
+// console.log(rotate(test,2));
+
+
+
 
 // 4.Write a function that takes a number and returns array of its digits.
 
@@ -1204,5 +1249,7 @@ console.log('Fumkcije');
 //     resetCounter1()
 //     resetCounter2()
 // });
+
+
 
 
