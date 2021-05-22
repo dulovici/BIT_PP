@@ -955,13 +955,52 @@ console.log('Fumkcije');
 
 // 6.Write a function to input temperature in Centigrade and convert to Fahrenheit.
 
+// function cToF(c) {
+//     return (c * 9/5) + 32;
+// }
+// console.log(cToF(30));
+
+
+
 // 7.Write a function to find the maximum element in array of numbers. Filter out all non-number elements.
+
+// var test = [29,13,-2,null,'string',true,'9',150,NaN];
+
+// function findMax(arr) {
+//     var nums = arr.filter(a => typeof a === 'number' && a === a);
+
+//     var output = -Infinity;
+
+//     arr.forEach(e => {
+//         if (e > output) output = e
+//     });
+
+//     return output;
+// }
+// console.log(findMax(test));
+
+
 
 // 8.Write a function to find the maximum and minimum elements. Function returns an array.
 
 // 9.Write a function to find the median element of array.
 
 // 10.Write a function to find the element that occurs most frequently.
+
+// var test = [3,7,4,1,'f',8,9,3,7,1,2,3,5,2,5,7,'f',5,3,2,3,5,6,4,2];
+
+// function mostFreq(arr) {
+//     var output = {}
+
+//     arr.forEach(e => {
+//         if(!output.hasOwnProperty(e)) output[e] = 1;
+//         else output[e] ++;
+//     })
+//     return output;
+// }
+// console.log(mostFreq(test));
+
+
 
 // 11.Write a function to find and return the first, middle and last element of an array if the array has odd number of elements. If number of elements is even, return just the first and the last. In other cases (empty array), input array should be returned.
 
@@ -1090,39 +1129,38 @@ console.log('Fumkcije');
 
 
 
-var btn1 = document.querySelector('.btn1');
-var btn2 = document.querySelector('.btn2');
-var btn3 = document.querySelector('.btn3');
-
-function createCounter(param) {
-    var counter = 0;
-    function increaseCounter() {
-        counter += param
-        console.log(counter);
-    }
-    function resetCounter() {
-        counter = 0
-        console.log(counter);
-    }
-    return [increaseCounter, resetCounter]
-}
-
-var counter1 = createCounter(5)
-var counter2 = createCounter(1)
-var increaseCounter1 = counter1[0]
-var increaseCounter2 = counter2[0]
-var resetCounter1 = counter1[1]
-var resetCounter2 = counter2[1]
 
 
-btn1.addEventListener('click', increaseCounter1);
-btn2.addEventListener('click', increaseCounter2);
-btn3.addEventListener('click', function () {
-    resetCounter1()
-    resetCounter2()
-});
+// var btn1 = document.querySelector('.btn1');
+// var btn2 = document.querySelector('.btn2');
+// var btn3 = document.querySelector('.btn3');
+
+// function createCounter(param) {
+//     var counter = 0;
+//     function increaseCounter() {
+//         counter += param
+//         console.log(counter);
+//     }
+//     function resetCounter() {
+//         counter = 0
+//         console.log(counter);
+//     }
+//     return [increaseCounter, resetCounter]
+// }
+
+// var counter1 = createCounter(5)
+// var counter2 = createCounter(1)
+// var increaseCounter1 = counter1[0]
+// var increaseCounter2 = counter2[0]
+// var resetCounter1 = counter1[1]
+// var resetCounter2 = counter2[1]
 
 
-
+// btn1.addEventListener('click', increaseCounter1);
+// btn2.addEventListener('click', increaseCounter2);
+// btn3.addEventListener('click', function () {
+//     resetCounter1()
+//     resetCounter2()
+// });
 
 
