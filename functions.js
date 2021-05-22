@@ -1004,7 +1004,33 @@ console.log('Fumkcije');
 
 // 11.Write a function to find and return the first, middle and last element of an array if the array has odd number of elements. If number of elements is even, return just the first and the last. In other cases (empty array), input array should be returned.
 
+// var test = [1,2,3,"četri",5,6,7];
+// var test = [1,2,3,"četri",5,6,7,8,9,5,7,8,2,4,6,8,0,8,4];
+
+// function firstMidLast(arr) {
+//     var output = [];
+//     if(arr.length % 2 !== 0) output = [arr[0], arr[arr.length/2-0.5], arr[arr.length-1]];
+//     else output = [arr[0], arr[arr.length-1]];
+
+//     return output;
+// }
+// console.log(firstMidLast(test));
+
+
+
 // 12.Write a function to find the average of N elements. Make the function flexible to receive dynamic number or parameters.
+
+// function avrg() {
+//     var cnt = 0;
+//     for(var i = 0; i<arguments.length; i++) {
+//         cnt += arguments[i];
+//     }
+//     return cnt / arguments.length;
+
+// };
+// console.log(avrg(2,3,4,5,55));
+
+
 
 // 13.Write a function to find all the numbers greater than the average.
 
