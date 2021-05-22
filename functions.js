@@ -720,13 +720,32 @@ console.log('Fumkcije');
 // console.log(shufle(test1,test2));
 
 
+
 // 8.Write a program that concatenates two arrays. 
 // Input arrays: [4, 5, 6, 2], [3, 8, 11, 9]
 // Output array: [4, 5, 6, 2, 3, 8, 11, 9]
 
+// var test1 = [4, 5, 6, 2];
+// var test2 = [3, 8, 11, 9];
+
+// function concat(arr1,arr2) {
+//     return arr2.concat(arr2);
+// }
+// console.log(concat(test1,test2));
+
+
+
 // 9.Write a program that deletes a given element e from the array a. 
 // Input: e = 2, a = [4, 6, 2, 8, 2, 2]
 // Output array: [4, 6, 8]
+
+// var test = [4, 6, 2, 8, 2, 2]
+
+// function eliminate(arr,el) {
+//     return arr.filter(e => e !== el);
+// }
+
+// console.log(eliminate(test,2));
 
 // 10.Write a program that inserts a given element e on the given position p in the array a. If the value of the position is greater than the array length, print the error message. 
 // Input: e = 78, p = 3, a = [2, -2, 33, 12, 5, 8]
