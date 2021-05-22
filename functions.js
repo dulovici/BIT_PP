@@ -1034,6 +1034,22 @@ console.log('Fumkcije');
 
 // 13.Write a function to find all the numbers greater than the average.
 
+// var test = [5,10,15,20,25,3,15,77,123,67,22,99];
+
+// function greatherThnAvg(arr) {
+//     var avr = arr.reduce((a,c) => a + c) / arr.length;
+//     var output = []
+//     arr.forEach(e => {
+//         if(e>avr) output.push(e);
+//     });
+//     console.log(avr);
+//     return output;
+
+// }
+// console.log(greatherThnAvg(test));
+
+
+
 // 14.The body mass index (BMI) is the ratio of the weight of a person (in kilograms) to the square of the height (in meters). Write a function that takes two parameters, weight and height, computes the BMI, and prints the corresponding BMI category:
 // Starvation: less than 15
 // Anorexic: less than 17.5
