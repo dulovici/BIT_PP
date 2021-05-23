@@ -1142,6 +1142,7 @@ console.log('Fumkcije');
 // outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 // Call that function 3 times with 3 different values for the arguments.
 
+
 // 2.You know how old your dog is in human years, but what about dog years? Calculate it!
 // Write a function named calculateDogAge that:
 // takes 1 argument: your puppy's age.
@@ -1197,6 +1198,32 @@ console.log('Fumkcije');
 // 7.Write a function that filters elements of the given array so that they satisfy a condition given by the callback function.
 // Input: [2, 8, 11, 4, 9, 3], callback function checks if the number is odd
 // Output: [11, 9, 3] 
+
+//===================================================== CODE WARS ===================================================================
+
+// 1.Are the numbers in order?
+
+// var t1 = [1,2,4,7,19];
+// var t2 = [1,2,3,4,5];
+// var t3 = [1,6,10,18,2,4,20];
+
+// function inAscOrder(arr) {
+//     var normalArr = arr.toString();
+//     var sortedArr = arr.sort((a,b) => a-b).toString();
+    
+//     return normalArr === sortedArr;
+// }
+
+// console.log(inAscOrder(t3));
+// console.log(t1);
+
+// 2. Build a square.
+
+function generateShape(integer){
+
+}
+
+
 
 
 
