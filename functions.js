@@ -1217,14 +1217,74 @@ console.log('Fumkcije');
 // console.log(inAscOrder(t3));
 // console.log(t1);
 
+
+
 // 2. Build a square.
 
-function generateShape(integer){
+// function generateShape(integer){
+//     var output = '';
+//     for (var i = 0; i < integer; i++) {
+//         for (var j = 0; j < integer; j++) {
+//             output += '+';
+//             if (j === integer-1 && i !== integer-1) output += '\n';
+//         }
+//     }
+//     return output;
+// }
 
-}
+// console.log(generateShape(3));
+
+//SMART ONE:
+// function generateShape(n){
+//     return ("+".repeat(n)+"\n").repeat(n).trim()
+// }
 
 
 
+// 3. Smallest Difference.
+
+// var t1 = [1, 3, 5, 23, 5];
+// var t2 = [45, 34, 67, 2, 0];
+// var t3 = [];
+
+// function smallestDiff(arr1, arr2) {
+//     if (arr1.length === 0 && arr2.length === 0) return -1;
+//     var output = Infinity;
+
+//     if(arr1.length === 0) {
+//         for(var i = 0; i < arr1.length; i++) {
+//             if (arr2[i] < output) output = arr2[i];
+
+//         }
+//     } else if (arr2.length === 0) {
+//         for(var i = 0; i < arr1.length; i++) {
+//             if (arr1[i] < output) output = arr1[i];
+            
+//         }
+
+//     } else {
+//         for(var i = 0; i < arr1.length; i++) {
+//             for(var j = 0;j < arr2.length; j++) {
+//                 if(Math.abs(arr1[i] - arr2[j]) < output && Math.abs(arr1[i] - arr1[j]) !== 0) output = Math.abs(arr1[i] - arr2[j])
+//             }
+//         };
+//     }
+    
+//     return output;
+// }
+
+// console.log(smallestDiff(t1,t3));
+
+// 4. Is prime
+
+// function isPrime(num) {
+//     if(num <= 1) return false;
+//     for(var i = 2; i<num; i++) {
+//         if(num % i === 0) return false;
+//     }
+//     return true;
+// }
+// console.log(isPrime(5099));
 
 
 
