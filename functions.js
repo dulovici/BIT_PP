@@ -1173,13 +1173,37 @@ console.log('Fumkcije');
 // Input array: [4, 5, 11, 9]
 // Output array: [ 9, 5, 11, 4]
 
+// (function swipe() {
+//     var t1 = [4, 5, 11, 9,4,6,8,12];
+//     var first = t1[0];
+//     var last = t1[t1.length-1]
+
+//     t1[0] = last;
+//     t1[t1.length-1] = first;
+//     console.log(t1);
+//     return  t1
+// })();
+
+
+
 // 2.Write IIFE that calculates the surface area of the given rectangle with sides a and b. 
-// Input: 4 5
+// Input: t1
 // Output: 20 
+
+
 
 // 3.Write IIFE that replaces all appearances of the letters m or M with * and returns the number of replacements. 
 // Input: prograMming
 // Output: progra**ing, 2
+
+// (function() {
+//     var t1 = 'prograMming';
+//     console.log(t1.replaceAll('m', '*').replaceAll('M','*'));
+//     return t1.replaceAll('m', '*').replaceAll('M','*')
+// })()
+
+
+
 
 // 4.Write a function with parameters name and surname that returns a function that suggests an email in the form name.surname@gmail.com. 
 // Input: pera peric
