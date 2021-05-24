@@ -1307,7 +1307,7 @@ console.log('Fumkcije');
 // function inAscOrder(arr) {
 //     var normalArr = arr.toString();
 //     var sortedArr = arr.sort((a,b) => a-b).toString();
-    
+
 //     return normalArr === sortedArr;
 // }
 
@@ -1356,7 +1356,7 @@ console.log('Fumkcije');
 //     } else if (arr2.length === 0) {
 //         for(var i = 0; i < arr1.length; i++) {
 //             if (arr1[i] < output) output = arr1[i];
-            
+
 //         }
 
 //     } else {
@@ -1366,7 +1366,7 @@ console.log('Fumkcije');
 //             }
 //         };
 //     }
-    
+
 //     return output;
 // }
 
@@ -1511,6 +1511,93 @@ console.log('Fumkcije');
 //     resetCounter1()
 //     resetCounter2()
 // });
+
+
+
+
+//===========================================================================
+
+//1. 
+// var test = [2, 4, 7, 11, -2, 1];
+
+// function dupl(arr) {
+//     var output = [];
+//     arr.forEach(e => {
+//         output.push(e)
+//         output.push(e)
+//     });
+//     return output;
+// }
+// console.log(dupl(test));
+
+//2.
+
+//3.
+
+//4.Write a function that finds the smallest element of a given array. The function should return an object that contains the smallest value and its last position in the array.
+// Input: [1, 4, -2, 11, 8, 1, -2, 3]
+// Output:  { minValue: -2, minLastIndex: 6 }
+
+// var test = [1, 4, -2, 11, 8, 1, -2, 3];
+
+// function findMin(arr) {
+//     var min = Math.min(...arr);
+//     var last = arr.lastIndexOf(min);
+//     var output = {
+//         minValue: min,
+//         minlastIndex: last
+//     }
+//     return output;
+// }
+
+// console.log(findMin(test));
+
+// console.log(test);
+// console.log(...test);
+
+// var test = 'programer';
+// console.log(test.substring(0, 3));
+
+
+// 5.b Write a function that finds all the elements in a given array that start with the “pro” substring. The function should be case insensitive. 
+// Input: [’JavaScript’, ’Programming’, ’fun’, ’product’] 
+// Output: [’Programming’, ‘product’]
+
+// var test = ['JavaScript', 'Programming', 'fun', 'product'];
+
+// function findPro(arr) {
+//     var output = [];
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i].toLowerCase().substring(0, 3) === 'pro') output.push(arr[i]);
+//     }
+//     return output;
+// }
+
+
+
+
+// function filt(arr, f) {
+//     return f(arr)
+// };
+
+// console.log(filt(test, findPro));
+
+
+
+
+
+
+// var test = {
+//     name: 'Igor',
+//     lastName: 'Dulovic',
+//     age: 29,
+//     hobi: ['svirka', 'cukarica']
+// };
+
+// console.log(Object.keys(test));
+// console.log(Object.entries(test));
+// console.log(test['name']);
+
 
 
 
