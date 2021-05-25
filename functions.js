@@ -1296,7 +1296,7 @@ console.log('Fumkcije');
 // 7.Write a function to capitalize the first letter of a string and returns modified string.
 // "js string exercises" -> "Js string exercises"
 
-var test = 'js string exercises';
+// var test = 'js string exercises';
 // function capitalize(str) {
 //     var output = str.split('');
 //     var cap = output.splice(0,1)[0].toUpperCase();
@@ -1324,13 +1324,42 @@ var test = 'js string exercises';
 // console.log(capitalizeWords('Igor Dulovic'));
 
 
+
 // 8.Write a function to hide email addresses to protect them from unauthorized users.
 // "somerandomaddress@example.com" -> "somerand...@example.com"
+
+// var test = 'somerandomaddress@example.com';
+
+// function hideEmail(str) {
+//     var split = str.split('@');
+
+//     return split[0].slice(0,3) + '...@' + split[1]
+// }
+// console.log(hideEmail(test));
+
+
 
 // 9.Write a program that accepts a string as input and swaps the case of each character. For example, if you input 'The Quick Brown Fox', the output should be 'tHE qUICK bROWN fOX'.
 // var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 // var LOWER = 'abcdefghijklmnopqrstuvwxyz';
 // "The Quick Brown Fox" -> "tHE qUICK bROWN fOX"
+
+// var test = 'The Quick Brown Fox';
+
+// function reverseCase(str) {
+//     var upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+//     var output = str.split('').map(a => {
+//         if(upper.indexOf(a) >= 0) return a.toLowerCase()
+//         else return a.toUpperCase()
+        
+//     })
+
+//     return output.join('')
+// }
+
+// console.log(reverseCase(test));
+
+
 
 
 
@@ -1627,9 +1656,6 @@ var test = 'js string exercises';
 
 
 
-
-
-
 // var test = {
 //     name: 'Igor',
 //     lastName: 'Dulovic',
@@ -1642,6 +1668,40 @@ var test = 'js string exercises';
 // console.log(test['name']);
 
 
+//random word
+// var test = ['zoki','haus','mleko','televizor','zvucnik','megbu','milica',8]
+// var randomWord = test[Math.ceil(Math.random() * test.length-1)];
+
+// console.log(randomWord);
+
+//Randomize arr.
+var test = [1,2,3,4,5,6,7,8,9];
+var t2 = ['Zoki', 'Miki', 'Pele', 'Suki','Koma','Riki', 'Filja','Markić']
+var t3 = ['Plava',1,'Roze',2,'Braon',3,'Crna']
+
+function shufleArr(arr) {
+    for(var i = arr.length-1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    return arr;
+}
+
+console.log(shufleArr(t3));
+
+// function shufleArr2(arr) {
+//     for(var i = 0; i > arr.length-1; i++) {
+//         var j = Math.floor(Math.random() * arr.length);
+//         var temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//     }
+//     return arr;
+// }
+
+// console.log(shufleArr2(t3));
 
 
 
