@@ -1275,12 +1275,54 @@ console.log('Fumkcije');
 // 5.Write a function to convert a string to its abbreviated form. 
 // "John Snow" -> 	"John S."
 
+// var test = "John Snow";
+
+// function abbrev(str) {
+
+//     var output = str.split(' ')[0] + ' ' + str.split(' ')[1].substring(0,1) + '.';
+//     return output;
+// }
+
+// console.log(abbrev(test));
+
+
+
 // 6.Write a function that adds string to the left or right of string, by replacing it’s characters.
 // '0000', ‘123’, 'l' -> 0123 
 // '00000000', ‘123’, 'r' -> 12300000
 
+
+
 // 7.Write a function to capitalize the first letter of a string and returns modified string.
 // "js string exercises" -> "Js string exercises"
+
+var test = 'js string exercises';
+// function capitalize(str) {
+//     var output = str.split('');
+//     var cap = output.splice(0,1)[0].toUpperCase();
+//     output.unshift(cap);
+    
+    
+//     return output.join('');
+// }
+// console.log(capitalize(test));
+
+//Resenje 2, obuhvati svaku rec.
+
+// function capitalizeWords(str) {
+//     var arr = str.split(' ');
+//     var output = arr.map(a => {
+//         var first = a.slice(0,1).toUpperCase();
+//         var second = a.slice(1)
+
+//         return first + second
+//     })
+    
+//    return output;
+    
+// }
+// console.log(capitalizeWords('Igor Dulovic'));
+
 
 // 8.Write a function to hide email addresses to protect them from unauthorized users.
 // "somerandomaddress@example.com" -> "somerand...@example.com"
