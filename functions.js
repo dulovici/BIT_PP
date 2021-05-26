@@ -1780,6 +1780,8 @@ kesica.addProduct(majonez)
 
 console.log(kesica.calcTotal());
 
+// 
+
 
 
 
