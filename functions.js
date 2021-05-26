@@ -1706,4 +1706,29 @@ var t4 = ['A', 'B', 'C', 'D', 'E']
 
 
 
+//PRIMER
+// function Person(gender) {
+//     this.gender = gender;
+// }
+// function Student(avGrade) {
+//     this.avGrade = avGrade;
+// }
+
+// Student.prototype = Object.create(Person.prototype);
+
+// var male = new Person('Male');
+// var pera = new Student(8);
+
+// console.log(pera);
+
+
+
+
+
+
+
+
+
+
+
 
