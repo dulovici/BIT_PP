@@ -1677,10 +1677,10 @@ console.log('Fumkcije');
 // console.log(randomWord);
 
 //Randomize arr.
-var test = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-var t2 = ['Zoki', 'Miki', 'Pele', 'Suki', 'Koma', 'Riki', 'Filja', 'Markić']
-var t3 = ['Plava', 1, 'Roze', 2, 'Braon', 3, 'Crna'];
-var t4 = ['A', 'B', 'C', 'D', 'E']
+// var test = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// var t2 = ['Zoki', 'Miki', 'Pele', 'Suki', 'Koma', 'Riki', 'Filja', 'Markić']
+// var t3 = ['Plava', 1, 'Roze', 2, 'Braon', 3, 'Crna'];
+// var t4 = ['A', 'B', 'C', 'D', 'E']
 
 // function shufleArr(arr) {
 //     for (var i = arr.length - 1; i > 0; i--) {
@@ -1722,74 +1722,4 @@ var t4 = ['A', 'B', 'C', 'D', 'E']
 // var pera = new Student(8);
 
 // console.log(pera);
-
-function Product(name, price, exdate) {
-    this.id = Math.floor(Math.random() * 90000 + 10000);
-    this.name = name;
-    this.price = Number(price.toFixed(2));
-    this.exdate = new Date(exdate)
-};
-Product.prototype.getInfo = function () {
-    var info = '';
-    info += this.name[0].toUpperCase() + this.name[this.name.length - 1].toUpperCase();
-    info += this.id;
-    info += ','
-    info += this.name;
-    info += ','
-    info += this.price;
-    return info;
-}
-
-// ==================================================
-
-function ShoppingBag() {
-    this.products = [];
-};
-ShoppingBag.prototype.addProduct = function (product) {
-    if (product.exdate > new Date) {
-        this.products[this.products.length] = product;
-    }
-}
-ShoppingBag.prototype.avrgPrice = function () {
-    var cnt = 0;
-    this.products.forEach(p => cnt += p.price)
-    return Number((cnt / this.products.length).toFixed(3))
-}
-ShoppingBag.prototype.mostExp = function () {
-    var max = this.products[0].price;
-    this.products.forEach(p => {
-        if (p.price > max) max = p.price;
-    })
-    return max;
-}
-ShoppingBag.prototype.calcTotal = function () {
-    var total = 0;
-    this.products.forEach(p => total += p.price);
-    return total;
-}
-
-
-
-var mleko = new Product('Mleko', 102, '12 Jun 2022');
-var banana = new Product('Banana', 95, '20 July 2022');
-var majonez = new Product('Majonez', 200, '23 jun 2022');
-var kesica = new ShoppingBag();
-kesica.addProduct(mleko)
-kesica.addProduct(banana)
-kesica.addProduct(majonez)
-
-console.log(kesica.calcTotal());
-
-// 
-
-
-
-
-
-
-
-
-
-
-
 
