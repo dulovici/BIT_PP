@@ -1301,8 +1301,8 @@ console.log('Fumkcije');
 //     var output = str.split('');
 //     var cap = output.splice(0,1)[0].toUpperCase();
 //     output.unshift(cap);
-    
-    
+
+
 //     return output.join('');
 // }
 // console.log(capitalize(test));
@@ -1317,9 +1317,9 @@ console.log('Fumkcije');
 
 //         return first + second
 //     })
-    
+
 //    return output;
-    
+
 // }
 // console.log(capitalizeWords('Igor Dulovic'));
 
@@ -1351,7 +1351,7 @@ console.log('Fumkcije');
 //     var output = str.split('').map(a => {
 //         if(upper.indexOf(a) >= 0) return a.toLowerCase()
 //         else return a.toUpperCase()
-        
+
 //     })
 
 //     return output.join('')
@@ -1675,25 +1675,14 @@ console.log('Fumkcije');
 // console.log(randomWord);
 
 //Randomize arr.
-var test = [1,2,3,4,5,6,7,8,9];
-var t2 = ['Zoki', 'Miki', 'Pele', 'Suki','Koma','Riki', 'Filja','Markić']
-var t3 = ['Plava',1,'Roze',2,'Braon',3,'Crna']
+var test = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var t2 = ['Zoki', 'Miki', 'Pele', 'Suki', 'Koma', 'Riki', 'Filja', 'Markić']
+var t3 = ['Plava', 1, 'Roze', 2, 'Braon', 3, 'Crna'];
+var t4 = ['A', 'B', 'C', 'D', 'E']
 
-function shufleArr(arr) {
-    for(var i = arr.length-1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-    }
-    return arr;
-}
-
-console.log(shufleArr(t3));
-
-// function shufleArr2(arr) {
-//     for(var i = 0; i > arr.length-1; i++) {
-//         var j = Math.floor(Math.random() * arr.length);
+// function shufleArr(arr) {
+//     for (var i = arr.length - 1; i > 0; i--) {
+//         var j = Math.floor(Math.random() * (i + 1));
 //         var temp = arr[i];
 //         arr[i] = arr[j];
 //         arr[j] = temp;
@@ -1701,7 +1690,20 @@ console.log(shufleArr(t3));
 //     return arr;
 // }
 
-// console.log(shufleArr2(t3));
+// console.log(shufleArr(t3));
+
+
+// function shufleArray(arr) {
+//     for (var i = arr.length - 1; i > 0; i--) {
+//         var j = Math.floor(Math.random() * (i + 1));
+//         var temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//     }
+//     return arr;
+// }
+// console.log(shufleArray(t4));
+
 
 
 
