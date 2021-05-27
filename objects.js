@@ -94,29 +94,83 @@
 
 //AIRPORT//
 
-// function Person(name, surename) {
+// function Person(name,surename) {
 //     this.name = name;
 //     this.surename = surename;
 // }
-// function Seat(number = Math.floor(Math.random() * 90 + 10), category = 'E') {
+// Person.prototype.getData = function() {
+//     return `${this.name} ${this.surename}`;
+// }
+// //===
+// function Seat(number = Math.floor(Math.random() * 90 + 10),category = 'E') {
 //     this.number = number;
 //     this.category = category.toUpperCase();
 // }
-// function Passenger(person, seat) {
+// Seat.prototype.getData = function() {
+//     return `${this.number}${this.category}`
+// }
+// //===
+// function Pax(person,seat) {
 //     this.person = person;
 //     this.seat = seat;
 // }
-// function Flight(dest, date) {
-//     this.dest = dest;
-//     this.date = new Date(date);
-//     this.paxList = [];
+// Pax.prototype.getData = function() {
+//     return `${this.seat['number']}, ${this.seat['category']}, ${this.person['name']} ${this.person['surename']}`;
 // }
+// //===
+// function Flight(relation,date) {
+//     this.relation = relation;
+//     this.date = new Date(date)
+//     this.listOfPax = [];
+// }
+// Flight.prototype.addPax = function(pax) {
+//     this.listOfPax.push(pax)
+// }
+// Flight.prototype.getData = function() {
+//     var output = '';
+//     output += this.date + ',';
+//     output += this.relation + '\n';
+//     for(var i = 0; i < this.listOfPax.length; i++) {
+//         output += `${this.listOfPax[i]['seat']['number']},${this.listOfPax[i]['seat']['category']},${this.listOfPax[i]['person']['name']} ${this.listOfPax[i]['person']['surename']} \n`
+//     }
+    
+
+//     return output;
+// }
+// //===
 // function Airport() {
-//     this.name = 'Nikola Tesla';
-//     this.listOfFligts = [];
+//     this.name = 'HIA'
+//     this.listOfFl = [];
+// }
+// Airport.prototype.addFlight = function(flight) {
+//     this.listOfFl.push(flight);
 // }
 
 
-// const sed = new Seat()
 
+
+
+// var igor = new Person('Igor', 'Dulovic');
+// var komsa = new Person('Aleksandar', 'Dojcinovic')
+
+// var seatIgor = new Seat(13,'E');
+// var seatKomsa = new Seat(14,'E');
+
+// var bpIgor = new Pax(igor,seatIgor);
+// var bpKomsa = new Pax(komsa,seatKomsa);
+
+// var qr666 = new Flight('Prague-Doha', '3 8 2020');
+
+// var hamad = new Airport();
+
+
+// qr666.addPax(bpIgor);
+// qr666.addPax(bpKomsa);
+
+// console.log(qr666.getData());
+// console.log(qr666);
+
+
+
+// DOM
 
