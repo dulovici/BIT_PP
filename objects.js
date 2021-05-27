@@ -68,5 +68,28 @@ ceger.addProduct(cigare)
 
 
 
-console.log(ceger);
-console.log(ceger.mostExp());
+//=====================================================
+
+function PaymentCard(amount,isActive) {
+    this.amount = Number(amount.toFixed(2));
+    this.isActive = isActive;
+}
+
+var ibq = new PaymentCard(12000,true);
+var intesa = new PaymentCard(800,false);
+var bihBank = new PaymentCard(200,true);
+
+
+
+
+function checkoutAndBuy(bag,card) {
+   var total = bag.calcTotal() ;
+   if (card.amount >= total) console.log('Purchase is successful.');
+   else  {
+       var short = total - card.amount;
+       console.log(`You need ${short} maraka more.`);
+   };
+}
+
+checkoutAndBuy(ceger,bihBank)
+
