@@ -161,6 +161,7 @@ console.log('Fumkcije');
 
 
 
+
 //===================================================== SLIDE 2 ===================================================================
 
 // 1. Write a function to check whether the `input` is a string or not.
