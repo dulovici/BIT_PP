@@ -216,4 +216,168 @@
 // tesla.charge()
 
 
+// ======================================================================
 
+// class Person {
+//     constructor(name,surname) {
+//         this.name = name;
+//         this.surname = surname;
+//     }
+
+//     getData() {
+//         return `${this.name} ${this.surname}`;
+//     }
+// }
+
+// class Seat {
+//     constructor(number = Math.floor(Math.random() * 90000 + 10000) ,category = 'E') {
+//         this.number = number;
+//         this.category = category;
+//     }
+
+//     getData() {
+//         return `${this.number}${this.category}`;
+//     }
+// }
+
+// class Passenger {
+//     constructor(person,seat) {
+//         this.fullName = `${person.name}_${person.surname}`;
+//         this.number = seat.number;
+//         this.category = seat.category;
+//     }
+
+//     getData() {
+//         return `${this.number}${this.category}-${this.fullName}`;
+//     }
+// }
+
+// class Flight {
+//     constructor(relation,date) {
+//         this.relation = relation;
+//         this.date = date;
+//         this.paxList = [];
+//     }
+
+//     addPax(pax) {
+//         this.paxList.push(pax);
+//     }
+
+//     getData() {
+//         let data = `${this.date}, ${airport.name}-${this.relation} \n`
+//         this.paxList.forEach(e => data += e.getData() + '\n');
+//         return data
+//     }
+// }
+
+// class Airport {
+//     constructor() {
+//         this.name = 'HIA';
+//         this.listOfFlights = [];
+//     }
+
+//     addFlight(flight) {
+//         this.listOfFlights.push(flight);
+//     }
+// }
+
+
+
+// const pera = new Person('Petar', 'Jelic');
+// const ljuba = new Person('Ljubomir', 'Zivanovic');
+
+// const peraSeat = new Seat();
+// const ljubaSeat = new Seat()
+
+// const peraBp = new Passenger(pera,peraSeat);
+// const ljubaBp = new Passenger(ljuba,ljubaSeat)
+
+// const prag = new Flight('PRG', '08-03-2020');
+
+// const airport = new Airport()
+
+
+// prag.addPax(peraBp)
+// prag.addPax(ljubaBp)
+// airport.addFlight(prag)
+// console.log(airport);
+// console.log(prag.getData());
+
+// ======================================================================
+
+class Genre {
+    constructor(genre) {
+        this.genre = genre;
+    }
+
+    getData() {
+        return `${this.genre[0].toUpperCase()}${this.genre[this.genre.length-1].toUpperCase()}`;
+    }
+}
+
+class Movie {
+    constructor(title,genre,length) {
+        this.title = title;
+        this.genre = genre.genre;
+        this.lengthMin = length
+    }
+
+    getData() {
+        return `${this.title}, ${this.lengthMin}min, ${this.genre.getData()}`
+    }
+}
+
+class Program {
+    constructor(date) {
+        this.date = date;
+        this.listOfMov = [];
+        this.numOfMovies = 0;
+        // this.numOfMov = this.listOfMov.length;
+    }
+
+    addMovie(movie) {
+        this.listOfMov.push(movie);
+        this.numOfMovies = this.listOfMov.length;
+    }
+
+    getData() {
+        const length = this.listOfMov.reduce((a,c) => a.lengthMin + c.lengthMin) / 60
+        let output = `Date:${this.date},Program Length:${length}h \n`;
+        this.listOfMov.forEach(e => output += e.title + ' ,' + e.lengthMin + ', ' + e.genre + '\n') ;
+        return output
+    }
+}
+
+class Festival {
+    constructor(name) {
+        this.name = name;
+        this.listOfPrograms = [];
+        this.numOfMovies = 0;
+    }
+
+    addProgram(program) {
+        this.listOfPrograms.push(program);
+    }
+}
+
+//Zanrovi
+const akcija = new Genre('Action');
+const drama = new Genre('Drama');
+const crtani = new Genre('Cartoon');
+//Filmovi
+const underground = new Movie('Undergorund',drama,180);
+const otpisani = new Movie('Otpisani',akcija,120 );
+const miki = new Movie('Miki Maus',crtani, 90);
+//Program
+const odrasli = new Program('10 5 2021');
+const deca = new Program('11 05 2021');
+//Festival
+const fest = new Festival('Brčko Nights')
+
+
+
+odrasli.addMovie(otpisani)
+odrasli.addMovie(underground)
+fest.addProgram(odrasli);
+console.log(odrasli);
+console.log(odrasli.getData());
