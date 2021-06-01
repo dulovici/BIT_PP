@@ -175,3 +175,45 @@
 // ===========================================================
 
 
+
+// class Car {
+//     constructor(brend, model, boja) {
+//         this.brand = brend,
+//             this.model = model,
+//             this.boja = boja
+//     }
+//     revEngine() {
+//         console.log('Vrrrrmm!');
+//     }
+// };
+
+// class Hibrid extends Car {
+//     constructor(brend, model, boja, km) {
+//         super(brend, model, boja);
+//         this.range = km;
+//     }
+//     drive() {
+//         this.range -= 10;
+//         console.log(this);
+//     }
+//     charge() {
+//         this.range = km;
+//         console.log(this);
+//     }
+
+// }
+
+// const benve = new Car('BMW', '540i', 'Crni');
+// const mecka = new Car('Mercedes', '200E', 'Sivi');
+// const tesla = new Hibrid('Tesla', 'S3', 'Crveni', 200);
+
+
+
+// console.log(tesla);
+// tesla.drive()
+// tesla.revEngine()
+// tesla.drive()
+// tesla.charge()
+
+
+

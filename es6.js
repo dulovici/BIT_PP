@@ -1,11 +1,11 @@
-// 1. Write a program that calculates the maximum of two given numbers. 
+// 1. Write a program that calculates the maximum of two given numbers.
 // A = 5 b = 6 output: 6
 
 // const a = [5,6,56,78,32,667]
 // let max = a[0]
 // var b = a.forEach((e) => {
 //     if (e > max) max = e
-    
+
 // })
 // console.log(max);
 
@@ -22,9 +22,9 @@
 
 // 4. Write a program that calculates an arithmetic mean of four numbers. =======================> KAKO CEO ZADATAK SA REDUCE
 
-// const nums = [23,45,87,12,6];
+// const nums = [23, 45, 87, 12, 6];
 
-// const avgOfNums = nums.reduce((a,e, arr) => (a+e)) /nums.length
+// const avgOfNums = nums.reduce((a, e) => a + e / nums.length, 0)
 
 // console.log(avgOfNums);
 
@@ -85,10 +85,10 @@
 
 // const test = 'Ananas';
 
-// function howManyL(str,l) {
+// function howManyL(str, l) {
 //     return str.toLowerCase().split('').filter(e => e === l.toLowerCase()).length
 // }
-// console.log(howManyL(test,'a'));
+// console.log(howManyL(test, 'a'));
 
 
 
