@@ -305,79 +305,79 @@
 
 // ======================================================================
 
-class Genre {
-    constructor(genre) {
-        this.genre = genre;
-    }
+// class Genre {
+//     constructor(genre) {
+//         this.genre = genre;
+//     }
 
-    getData() {
-        return `${this.genre[0].toUpperCase()}${this.genre[this.genre.length-1].toUpperCase()}`;
-    }
-}
+//     getData() {
+//         return `${this.genre[0].toUpperCase()}${this.genre[this.genre.length-1].toUpperCase()}`;
+//     }
+// }
 
-class Movie {
-    constructor(title,genre,length) {
-        this.title = title;
-        this.genre = genre.genre;
-        this.lengthMin = length
-    }
+// class Movie {
+//     constructor(title,genre,length) {
+//         this.title = title;
+//         this.genre = genre.genre;
+//         this.lengthMin = length
+//     }
 
-    getData() {
-        return `${this.title}, ${this.lengthMin}min, ${this.genre.getData()}`
-    }
-}
+//     getData() {
+//         return `${this.title}, ${this.lengthMin}min, ${this.genre.getData()}`
+//     }
+// }
 
-class Program {
-    constructor(date) {
-        this.date = date;
-        this.listOfMov = [];
-        this.numOfMovies = 0;
-        // this.numOfMov = this.listOfMov.length;
-    }
+// class Program {
+//     constructor(date) {
+//         this.date = date;
+//         this.listOfMov = [];
+//         this.numOfMovies = 0;
+//         // this.numOfMov = this.listOfMov.length;
+//     }
 
-    addMovie(movie) {
-        this.listOfMov.push(movie);
-        this.numOfMovies = this.listOfMov.length;
-    }
+//     addMovie(movie) {
+//         this.listOfMov.push(movie);
+//         this.numOfMovies = this.listOfMov.length;
+//     }
 
-    getData() {
-        const length = this.listOfMov.reduce((a,c) => a.lengthMin + c.lengthMin) / 60
-        let output = `Date:${this.date},Program Length:${length}h \n`;
-        this.listOfMov.forEach(e => output += e.title + ' ,' + e.lengthMin + ', ' + e.genre + '\n') ;
-        return output
-    }
-}
+//     getData() {
+//         const length = this.listOfMov.reduce((a,c) => a.lengthMin + c.lengthMin) / 60
+//         let output = `Date:${this.date},Program Length:${length}h \n`;
+//         this.listOfMov.forEach(e => output += e.title + ' ,' + e.lengthMin + ', ' + e.genre + '\n') ;
+//         return output
+//     }
+// }
 
-class Festival {
-    constructor(name) {
-        this.name = name;
-        this.listOfPrograms = [];
-        this.numOfMovies = 0;
-    }
+// class Festival {
+//     constructor(name) {
+//         this.name = name;
+//         this.listOfPrograms = [];
+//         this.numOfMovies = 0;
+//     }
 
-    addProgram(program) {
-        this.listOfPrograms.push(program);
-    }
-}
+//     addProgram(program) {
+//         this.listOfPrograms.push(program);
+//     }
+// }
 
-//Zanrovi
-const akcija = new Genre('Action');
-const drama = new Genre('Drama');
-const crtani = new Genre('Cartoon');
-//Filmovi
-const underground = new Movie('Undergorund',drama,180);
-const otpisani = new Movie('Otpisani',akcija,120 );
-const miki = new Movie('Miki Maus',crtani, 90);
-//Program
-const odrasli = new Program('10 5 2021');
-const deca = new Program('11 05 2021');
-//Festival
-const fest = new Festival('Brčko Nights')
+// //Zanrovi
+// const akcija = new Genre('Action');
+// const drama = new Genre('Drama');
+// const crtani = new Genre('Cartoon');
+// //Filmovi
+// const underground = new Movie('Undergorund',drama,180);
+// const otpisani = new Movie('Otpisani',akcija,120 );
+// const miki = new Movie('Miki Maus',crtani, 90);
+// //Program
+// const odrasli = new Program('10 5 2021');
+// const deca = new Program('11 05 2021');
+// //Festival
+// const fest = new Festival('Brčko Nights')
 
 
 
-odrasli.addMovie(otpisani)
-odrasli.addMovie(underground)
-fest.addProgram(odrasli);
-console.log(odrasli);
-console.log(odrasli.getData());
+// odrasli.addMovie(otpisani)
+// odrasli.addMovie(underground)
+// fest.addProgram(odrasli);
+// console.log(odrasli);
+// console.log(odrasli.getData());
