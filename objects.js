@@ -311,12 +311,12 @@
 //     }
 
 //     getData() {
-//         return `${this.genre[0].toUpperCase()}${this.genre[this.genre.length-1].toUpperCase()}`;
+//         return `${this.genre[0].toUpperCase()}${this.genre[this.genre.length - 1].toUpperCase()}`;
 //     }
 // }
 
 // class Movie {
-//     constructor(title,genre,length) {
+//     constructor(title, genre, length) {
 //         this.title = title;
 //         this.genre = genre.genre;
 //         this.lengthMin = length
@@ -341,9 +341,9 @@
 //     }
 
 //     getData() {
-//         const length = this.listOfMov.reduce((a,c) => a.lengthMin + c.lengthMin) / 60
+//         const length = this.listOfMov.reduce((a, c) => a.lengthMin + c.lengthMin) / 60
 //         let output = `Date:${this.date},Program Length:${length}h \n`;
-//         this.listOfMov.forEach(e => output += e.title + ' ,' + e.lengthMin + ', ' + e.genre + '\n') ;
+//         this.listOfMov.forEach(e => output += e.title + ' ,' + e.lengthMin + ', ' + e.genre + '\n');
 //         return output
 //     }
 // }
@@ -365,9 +365,9 @@
 // const drama = new Genre('Drama');
 // const crtani = new Genre('Cartoon');
 // //Filmovi
-// const underground = new Movie('Undergorund',drama,180);
-// const otpisani = new Movie('Otpisani',akcija,120 );
-// const miki = new Movie('Miki Maus',crtani, 90);
+// const underground = new Movie('Undergorund', drama, 180);
+// const otpisani = new Movie('Otpisani', akcija, 120);
+// const miki = new Movie('Miki Maus', crtani, 90);
 // //Program
 // const odrasli = new Program('10 5 2021');
 // const deca = new Program('11 05 2021');
@@ -381,3 +381,44 @@
 // fest.addProgram(odrasli);
 // console.log(odrasli);
 // console.log(odrasli.getData());
+
+
+//=============================================================================
+
+// 2) Turn an array of numbers into a long string of all those numbers.
+// const test = [1, 2, 3];
+
+// function stringConcat(arr) {
+//     return test.reduce((a, e) => a + e, '')
+// };
+
+// console.log(stringConcat(test));
+
+
+// 3) Turn an array of voter objects into a count of how many people voted.
+
+// var voters = [
+//     { name: 'Bob', age: 30, voted: true },
+//     { name: 'Jake', age: 32, voted: true },
+//     { name: 'Kate', age: 25, voted: false },
+//     { name: 'Sam', age: 20, voted: false },
+//     { name: 'Phil', age: 21, voted: true },
+//     { name: 'Ed', age: 55, voted: true },
+//     { name: 'Tami', age: 54, voted: true },
+//     { name: 'Mary', age: 31, voted: false },
+//     { name: 'Becky', age: 43, voted: false },
+//     { name: 'Joey', age: 41, voted: true },
+//     { name: 'Jeff', age: 30, voted: true },
+//     { name: 'Zack', age: 19, voted: false }
+// ];
+
+// function totalVotes(arr) {
+//     return arr.reduce((a, e) => {
+//         if (e.voted) a++
+//         return a
+//     }, 0)
+// }
+
+// console.log(totalVotes(voters));
+
+// console.log(voters[0].voted);
