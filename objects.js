@@ -174,8 +174,6 @@
 
 // ===========================================================
 
-
-
 // class Car {
 //     constructor(brend, model, boja) {
 //         this.brand = brend,
@@ -422,3 +420,21 @@
 // console.log(totalVotes(voters));
 
 // console.log(voters[0].voted);
+
+
+
+// let test;
+
+// function getData() {
+//     const req = new XMLHttpRequest();
+//     req.open('GET', `https://api.github.com/search/users?q=pera&per_page=20`);
+//     req.send();
+//     req.onload = function () {
+//         const data = JSON.parse(req.responseText).items;
+//         console.log(data);
+//         test = data;
+//     }
+
+// }
+// getData()
+// console.log(test);
