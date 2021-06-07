@@ -438,3 +438,14 @@
 // }
 // getData()
 // console.log(test);
+
+// const arr = [{ a: 2, b: true }, { a: -1, b: false }, { a: 3, b: true }, { a: -8, b: false }];
+
+// const output = arr.reduce((acc, e) => {
+//     if (e.b) acc.added += e.a;
+//     else acc.sub -= e.a;
+//     return acc
+// }, { added: 0, sub: 0 })
+
+// console.log(output);
+
