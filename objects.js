@@ -422,3 +422,5 @@
 // console.log(totalVotes(voters));
 
 // console.log(voters[0].voted);
+
+// git vezba
