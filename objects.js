@@ -1,5 +1,8 @@
 // 'use strict'
 
+
+// https://meet.google.com/soi-cbbo-rnw      GOOGLE MEET
+
 // SHOPING LIST //
 
 // function Product(name, price, exdate) {
@@ -173,8 +176,6 @@
 
 
 // ===========================================================
-
-
 
 // class Car {
 //     constructor(brend, model, boja) {
@@ -423,4 +424,43 @@
 
 // console.log(voters[0].voted);
 
+<<<<<<< HEAD
 // git vezba
+=======
+
+
+// let test;
+
+// function getData() {
+//     const req = new XMLHttpRequest();
+//     req.open('GET', `https://api.github.com/search/users?q=pera&per_page=20`);
+//     req.send();
+//     req.onload = function () {
+//         const data = JSON.parse(req.responseText).items;
+//         console.log(data);
+//         test = data;
+//     }
+
+// }
+// getData()
+// console.log(test);
+
+// const arr = [{ a: 2, b: true }, { a: -1, b: false }, { a: 3, b: true }, { a: -8, b: false }];
+
+// const output = arr.reduce((acc, e) => {
+//     if (e.b) acc.added += e.a;
+//     else acc.sub -= e.a;
+//     return acc
+// }, { added: 0, sub: 0 })
+
+// console.log(output);
+
+
+
+// function fib(n) {
+//     if (n < 2) return n;
+//     return fib(n - 1) + fib(n - 2)
+// }
+
+// console.log(fib(12));
+>>>>>>> f3b41f6a6d17710dbf4db70607a99ba591857780
