@@ -422,3 +422,15 @@
 // console.log(totalVotes(voters));
 
 // console.log(voters[0].voted);
+
+
+
+    const data = ()=> {
+        fetch('https://v-dresevic.github.io/Advanced-JavaScript-Programming/data/students.txt')
+            .then(res => res.text())
+            .then(dta => {
+                console.log(dta)
+            })
+        }
+
+        data()
