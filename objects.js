@@ -424,9 +424,7 @@
 
 // console.log(voters[0].voted);
 
-<<<<<<< HEAD
-// git vezba
-=======
+
 
 
 // let test;
@@ -463,4 +461,4 @@
 // }
 
 // console.log(fib(12));
->>>>>>> f3b41f6a6d17710dbf4db70607a99ba591857780
+
