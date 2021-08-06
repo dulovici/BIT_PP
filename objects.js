@@ -462,3 +462,15 @@
 
 // console.log(fib(12));
 
+
+// fetch('https://dog.ceo/api/breeds/image/random')
+//     .then(res=> res.json())
+//     .then(dta => {
+//         const data = dta
+
+//         console.log(data);
+//     })
+
+    
+
+
