@@ -1726,20 +1726,32 @@ console.log('Fumkcije');
 
 
 
-function squared(a,b) {
-    let cnt = 0;
-    a.forEach(ael => {
-        b.forEach(bel => {
-            if(bel === ael*ael) cnt++
-        } ) 
-    })
+//SQUARED FUNCTION
 
-    if(cnt === a.length) return true;
-    return false;
-}
+// function squared(a,b) {
+//     let cnt = 0;
+//     a.forEach(ael => {
+//         b.forEach(bel => {
+//             if(bel === ael*ael) cnt++
+//         } ) 
+//     })
+
+//     if(cnt === a.length) return true;
+//     return false;
+// }
 
 
-const t1 = [2,3,5];
-const t2 = [25,4,9];
+// const t1 = [2,3,5];
+// const t2 = [25,4,9];
 
-console.log(squared(t1,t2));
+// console.log(squared(t1,t2));
+
+
+
+
+
+
+
+
+
+
