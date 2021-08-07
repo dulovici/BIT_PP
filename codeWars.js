@@ -4,7 +4,7 @@
 
 
 
-//1.
+//1. Find the odd int
 // Given an array of integers, find the one that appears an odd number of times.
 //There will always be only one integer that appears an odd number of times.
 
@@ -30,7 +30,7 @@
 
 
 
-//2
+//2 Vowel Count
 //Return the number (count) of vowels in the given string.
 //We will consider a, e, i, o, u as vowels for this Kata (but not y).
 //The input string will only consist of lower case letters and/or spaces.
@@ -62,5 +62,23 @@
 
 
 
-//3
+
+//3. Sum of Digits / Digital Root
+//Digital root is the recursive sum of all the digits in a number.
+//Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
+
+// const t1 = 16;
+// const t2 = 493193;
+
+// function digital_root(n) {
+//     let sum = Array.from(n.toString(), i => +i).reduce((a,b) => a+b)
+//     let output = sum;
+//     while(output > 9) {
+//         output = Array.from(output.toString(), i => +i).reduce((a,b) => a+b);
+//     }
+    
+//     return output
+// }
+// console.log(digital_root(132189));
+// const splitN = n.toString().split('').map(i => +i)  Another way to split int;
 
