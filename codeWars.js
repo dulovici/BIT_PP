@@ -95,5 +95,30 @@
 
 
 
-//
+//6. Stop gninnipS My sdroW!
+//Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (like the name of this kata).
+
+// const t1 = "Hey fellow warriors";
+// const t2 = "This is another test";
+
+// function spinWords(string){
+//     const words = string.split(' ');
+//     const output =[];
+
+//     words.forEach(word => {
+//         if(word.length > 4) {
+//             output.push(word.split('').reverse().join(''));
+//         }
+//         else output.push(word)
+//     })
+
+//     return output.join(' ');
+// }
+
+// console.log(spinWords(t1));
+
+// //Smarter way
+// function spinWords(str){
+//     return str.split(' ').map( w => w.length<5 ? w : w.split('').reverse().join('') ).join(' ');
+//   }
 
