@@ -180,3 +180,32 @@ console.log('Code Wars');
 
 // console.log(duplicateCount("aabBcde" ));
 
+
+
+
+//9. Higest and Lowest
+//In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+
+// const t1 = "1 2 3 4 5";
+// const t2 = "1 2 -3 4 5";
+
+// function highAndLow(numbers){
+//     const sample = numbers.split(' ').map(el => +el);
+//     let max = sample[0];
+//     let min = sample[0];
+//     sample.forEach(el => {
+//         if(el > max) max = el;
+//         if(el < min) min = el;
+//     })
+
+//     return `${max} ${min}`
+// }
+
+// console.log(highAndLow(t2));
+
+// //Smarter way 
+
+// function highAndLow(numbers){
+//     numbers = numbers.split(' ');
+//     return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+//   }
