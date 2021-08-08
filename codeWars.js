@@ -156,3 +156,27 @@ console.log('Code Wars');
 //     return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
 //   }
 
+
+
+
+//8. Counting Duplicates
+//Write a function that will return the count of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string. The input string can be assumed to contain only alphabets (both uppercase and lowercase) and numeric digits.
+
+// function duplicateCount(text){
+//     const sample = text.toLowerCase().split('');
+//     const occurrences = {};
+//     let duplicates = 0;
+
+//     sample.forEach(el => {
+//         occurrences[el] ? occurrences[el]++ : occurrences[el] = 1;
+//     })
+    
+//     for(let dupl in occurrences) {
+//         if(occurrences[dupl] > 1) duplicates++
+//     }
+
+//     return duplicates;
+// }
+
+// console.log(duplicateCount("aabBcde" ));
+
