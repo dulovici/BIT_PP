@@ -1,4 +1,5 @@
-
+'use strict'
+console.log('Code Wars');
                                                              //CODE WARS//
 
 
@@ -120,5 +121,38 @@
 // //Smarter way
 // function spinWords(str){
 //     return str.split(' ').map( w => w.length<5 ? w : w.split('').reverse().join('') ).join(' ');
+//   }
+
+
+
+
+//7. Mumbling
+//accum("abcd") -> "A-Bb-Ccc-Dddd"
+//accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+//accum("cwAt") -> "C-Ww-Aaa-Tttt
+
+// function accum(s) {
+// 	const chars = s.split('').map(el => el.toLowerCase());
+//     let cnt = 1;
+//     const output = [];
+
+//     for(let i = 0; i < chars.length; i++) {
+//         let piece = '';
+//         for(let j = 0; j < cnt; j++) {
+//             piece += chars[i]
+//         }
+//         output.push(piece)
+//         cnt++
+//     }
+
+//     return output.map(el => el.charAt(0).toUpperCase() + el.substr(1)).join('-')
+// }
+
+// console.log(accum('aBcD'));
+
+// //Smarter way
+
+// function accum(s) {
+//     return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
 //   }
 
