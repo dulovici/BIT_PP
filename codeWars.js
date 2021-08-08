@@ -253,3 +253,68 @@ console.log('Code Wars');
 
 // console.log(squareDigits(9119));
 
+
+
+
+//12. Descending Order
+//Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+// function descendingOrder(n){
+//     return +n.toString().split('').map(i => +i).sort((a,b) => b-a).join('')
+// }
+
+// console.log(descendingOrder(145263));
+
+
+
+
+//.13 Find The Parity Outlier
+//You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that takes the array as an argument and returns this "outlier" N.
+
+// const t1 = [2, 4, 0, 100, 4, 11, 2602, 36];
+// const t2 = [160, 3, 1719, 19, 11, 13, -21];
+
+// function findOutlier(integers){
+//     const even = [];
+//     const odd = [];
+
+//     integers.forEach(el => el % 2 ? odd.push(el) : even.push(el));
+
+//     return even.length === 1 ? even[0] : odd[0]
+// }
+
+// console.log(findOutlier(t2));
+
+// //Smarter way
+
+// function findOutlier(int){
+//     var even = int.filter(a=>a%2==0);
+//     var odd = int.filter(a=>a%2!==0);
+//     return even.length==1? even[0] : odd[0];
+//   }
+
+
+
+
+
+//14. Array.dif
+//Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+//It should remove all values from list a, which are present in list b keeping their order.
+
+function arrayDiff(a, b) {
+    const output = a
+    .concat(b)
+    .filter(el => !a.includes(el) || !b.includes(el));
+
+    return a.length === 0 ? [] : output
+}
+
+console.log(arrayDiff([], [4,5]));
+
+//Smarter way 
+function array_diff(a, b) {
+    return a.filter(e => !b.includes(e));
+}
+
+
+
