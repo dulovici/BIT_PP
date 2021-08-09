@@ -301,20 +301,137 @@ console.log('Code Wars');
 //Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
 //It should remove all values from list a, which are present in list b keeping their order.
 
-function arrayDiff(a, b) {
-    const output = a
-    .concat(b)
-    .filter(el => !a.includes(el) || !b.includes(el));
+// function arrayDiff(a, b) {
+//     const output = a
+//     .concat(b)
+//     .filter(el => !a.includes(el) || !b.includes(el));
 
-    return a.length === 0 ? [] : output
-}
+//     return a.length === 0 ? [] : output
+// }
 
-console.log(arrayDiff([], [4,5]));
+// console.log(arrayDiff([], [4,5]));
 
-//Smarter way 
-function array_diff(a, b) {
-    return a.filter(e => !b.includes(e));
-}
+// //Smarter way 
+// function array_diff(a, b) {
+//     return a.filter(e => !b.includes(e));
+// }
 
 
 
+
+//15. Calculating with Functions
+//This time we want to write calculations using functions and get the results. Let's have a look at some examples:
+
+// function handler(num,operation) {
+//     if(operation) return operation(num);
+//     return num;
+// }
+
+// function zero(operation) {
+//     return handler(0,operation)
+// }
+// function one(operation) {
+//     return handler(1,operation)
+// }
+// function two(operation) {
+//     return handler(2,operation)
+// }
+// function three(operation) {
+//     return handler(3,operation)
+// }
+// function four(operation) {
+//     return handler(4,operation)
+// }
+// function five(operation) {
+//     return handler(5,operation)
+// }
+// function six(operation) {
+//     return handler(6,operation)
+// }
+// function seven(operation) {
+//     return handler(7,operation)
+// }
+// function eight(operation) {
+//     return handler(8,operation)
+// }
+// function nine(operation) {
+//     return handler(9,operation)
+// }
+
+// function plus(x) {
+//     return function(y) {
+//         return Math.floor(y + x)
+        
+//     }
+// }
+// function minus(x) {
+//     return function(y) {
+//         return Math.floor(y - x)
+//     }
+// }
+// function times(x) {
+//     return function(y) {
+//         return Math.floor(y * x)
+//     }
+// }
+// function dividedBy(x) {
+//     return function(y) {
+//         return Math.floor(y / x)
+//     }
+// }
+
+
+// console.log(three(plus(five())));
+
+
+
+
+//16. Create Phone Number
+//Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
+//createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
+
+
+// const t1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+
+// function createPhoneNumber(numbers){
+//     const output = ['(','n','n','n',')',' ','n','n','n','-','n','n','n','n']
+//     let cnt = 0;
+
+//     for(let i = 0; i < output.length; i++) {
+//         if(output[i] === 'n') {
+//             output[i] = numbers[cnt];
+//             cnt++
+//         }
+//     }
+
+//     return output.join('')
+// }
+
+// console.log(createPhoneNumber(t1));
+
+
+// STRING PERMUTATION
+// let findPermutations = (string) => {
+//     if (!string || typeof string !== "string"){
+//       return "Please enter a string"
+//     } else if (string.length < 2 ){
+//       return string
+//     }
+  
+//     let permutationsArray = [] 
+     
+//     for (let i = 0; i < string.length; i++){
+//       let char = string[i]
+  
+//       if (string.indexOf(char) != i)
+//       continue
+  
+//       let remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
+  
+//       for (let permutation of findPermutations(remainingChars)){
+//         permutationsArray.push(char + permutation) }
+//     }
+//     return permutationsArray
+//   }
+
+//   console.log(findPermutations());
