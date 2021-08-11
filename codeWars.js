@@ -434,4 +434,46 @@ console.log('Code Wars');
 //     return permutationsArray
 //   }
 
-//   console.log(findPermutations());
+//   console.log(findPermutations('1234'));
+
+
+// function nextBigger(n) {
+//     const sortedDigits = n => ('' + n).split('').sort((a, b) => b - a)
+//     const max = +sortedDigits(n).join('')
+//     for (let i = n + 1; i <= max; i++) {
+//       if (max === +sortedDigits(i).join('')) return i
+//     }
+//     return -1
+//   }
+
+//   console.log(nextBigger(12));
+
+
+
+
+// function nextBigger(num) {
+//     function engine(n){
+//         const sortedN = num => +num.toString().split('').sort((a,b) => b - a ).join('')
+//         const max = sortedN(n)
+//         for(let i = n + 1; i <= max; i++) {
+//             if(max === sortedN(i)) return i;
+//         }
+//         return -1
+//     }
+
+//     if(num.toString().length < 15) return engine(num);
+
+//     const number = num.toString()
+//     const part1 = number.slice(0, number.length/2)
+//     const part2 = +number.slice(number.length/2, number.length)
+    
+//     return +(part1 + engine(part2))
+// }
+
+// console.log(nextBigger(12345678910111));
+
+
+
+
+
+
