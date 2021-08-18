@@ -1,9 +1,77 @@
 'use strict'
 console.log('Code Wars');
-                                                             //CODE WARS//
+                                                             
 
 
 
+
+                                                            // UTILITY TOOLS //
+
+//1. GENERATE RANDOM BOOLEAN
+// const randomBoolean = () => Math.random() >= 0.5;
+// console.log(randomBoolean());
+
+
+//2. GENERATE RANDOM NUMBER
+// const randomNumber = (max) => Math.round(Math.random() * max) ;
+// console.log(randomNumber(10));
+
+// const randomNumInRange = (min,max) => Math.round(Math.random() * (max-min) + min)
+// console.log(randomNumInRange(10,12));
+
+
+//3. GENERATE RANDOM ID
+// const randomId = () => Math.random().toString(36).substring(2) || 0;
+// console.log(randomId());
+
+
+//4. GENERATE RANDOM HEX NUMBER
+// const randomHex = () => `#${Math.random().toString(16).slice(2,9).padEnd(6,'0')}`;
+// console.log(randomHex());
+
+
+//5.INITIALIZE AN ARRAY
+// const generateSortedNumberArray = (length) => [...Array(length).keys()]
+
+
+//6.REMOVE DUPLICATES FROM AN ARRAY
+// const removeDuplicates = (target) => [...new Set(target)];
+// console.log(removeDuplicates([1,2,3,3,4,5,6,4,7,5,5,2,4,8,9,9,7,5]));
+
+
+//7.SHUFFLE AN ARRAY 
+// function shuffleArray(array)  {
+//     for (var i = array.length - 1; i > 0; i--) {
+//         var j = Math.floor(Math.random() * (i + 1));
+//         var temp = array[i];
+//         array[i] = array[j];
+//         array[j] = temp;
+//     }
+//     return array
+// }
+// console.log(shuffleArray(['jedan','dva','tri','cetri','pet']));
+
+
+
+//8. DETECT HOVER EFFECT FEATURE
+// const hasOverEffect = () => window.matchMedia('(any-hover: hover)').matches;
+// //res will be true for desktop devices and false for mobile ones
+// console.log(hasOverEffect());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                              //CODE WARS//   
 
 //1. Find the odd int
 // Given an array of integers, find the one that appears an odd number of times.
@@ -471,6 +539,89 @@ console.log('Code Wars');
 // }
 
 // console.log(nextBigger(12345678910111));
+
+
+
+
+//17 Take a picture 
+//Given a gallery of photos, write a function to sort through your pictures. You get a random hard disk drive full of pics, you must return an array with the 5 most recent ones PLUS the next one (same year and number following the one of the last).
+
+//sortPhotos["2016.img1","2016.img2","2015.img3","2016.img4","2013.img5"]) ==["2013.img5","2015.img3","2016.img1","2016.img2","2016.img4","2016.img5"]
+//sortPhotos["2016.img1"]) ==["2016.img1","2016.img2"]
+
+// const t1 = ["2016.img1","2016.img2","2015.img3","2016.img42","2013.img5"];
+// const t2 = ["2016.img1"];
+
+// function sortPhotos(pics){
+//     const sortAlphaNum = (a, b) => a.localeCompare(b, 'en', { numeric: true });
+//     const sortedPics = pics.sort(sortAlphaNum);
+//     const lastPic = sortedPics[sortedPics.length-1];
+//     const lastCH = isNaN(+lastPic.slice(-2)) ? +lastPic.slice(-1) : +lastPic.slice(-2);
+//     const nextPic = isNaN(+lastPic.slice(-2)) 
+//     ? lastPic.substring(0, lastPic.length-1) + (lastCH + 1 )
+//     : lastPic.substring(0, lastPic.length-2) + (lastCH + 1)
+
+//     sortedPics.push(nextPic)
+
+//     return sortedPics.length > 5 ? sortedPics.slice(sortedPics.length-6,sortedPics.length) : sortedPics;
+// };
+
+
+// console.log(sortPhotos(['2008.img10', '2012.img11', '2009.img19']));
+
+
+
+
+//18 Your order please
+//Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.
+
+// const t1 = "is2 Thi1s T4est 3a";
+// const t2 = "4of Fo1r pe6ople g3ood th5e the2";
+
+// function order(words){
+    
+//     return words.split(' ').sort((a,b) => a - b)
+// }
+
+// console.log(order(t1));
+
+
+
+
+//19 Two fighters one winner
+
+// function Fighter(name, health, damagePerAttack) {
+//     this.name = name;
+//     this.health = health;
+//     this.damagePerAttack = damagePerAttack;
+//     this.toString = function() { return this.name; }
+// }
+
+
+// const zoki = new Fighter('Zoki', 100, 10);
+// const zmika = new Fighter('Zmika', 100, 20);
+
+
+// function declareWinner(fighter1, fighter2, firstAttacker) {
+//     let turn = fighter1 === firstAttacker;
+
+//     while('fight') {
+//         if(turn) {
+//             fighter2.health -= fighter1.damagePerAttack;
+//             if(fighter2.health <= 0) 
+//             return fighter1.name;
+//         }else {
+//             fighter1.health -= fighter2.damagePerAttack;
+//             if(fighter1.health <= 0) 
+//             return fighter1.name;
+//         }
+
+//         turn = !turn
+//     }
+// }
+
+// console.log(declareWinner(zoki,zmika,zmika));
+
 
 
 
