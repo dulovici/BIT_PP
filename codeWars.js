@@ -66,6 +66,56 @@ console.log('Code Wars');
 
 
 
+                                                         // TRYING SOME THINGS//
+    //ERROR AS PARAMETER
+
+    // const isRequired = () => {throw new Error('Param is required.')};
+    // const print = (num = isRequired()) => {console.log(`printing ${num}`)};
+
+    //===============
+    //FORMAT JSON CODE
+
+    // console.log(JSON.stringify({name: 'Zoki', age: 32},null, '\t'));
+
+    //===============
+    // REMOVE FALSY VALUES FROM ARRAY
+
+    // const test = [1, undefined, 2, null, 3, NaN, 4, 0, 5, '', 6, false];
+    // const trueVal = test.filter(el => el);
+    // const trueVal2 = test.filter(Boolean);
+    // console.log(trueVal);
+
+    //===============
+    // MERGE OBJECTS
+
+    // const user = {
+    //     name: 'Zmika Peric',
+    //     gender: 'Male'
+    // };
+
+    // const collage = {
+    //     prymary: 'Primary school',
+    //     secondary:  'Secondary school'
+    // };
+
+    // const skills = {
+    //     programing: 'Extreme',
+    //     swimming: 'Average',
+    //     sleeping: 'Pro'
+    // };
+
+    // const summary = {...user, ...collage, ...skills};
+
+    // console.log(summary);
+
+    //===============
+    
+
+
+
+    
+
+
 
 
 
