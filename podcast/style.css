@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap');
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+    font-size: 18px;
+    background-color: var(--black);  
+    /* position: relative;   */
+}
+
+:root {
+    --green: #54e6af;
+    --darkGray: #2c344b;
+    --gray: #5a668a;
+    --lightGray: #c2cbe5;
+    --black: #121725;
+    --white: #ffffff;
+
+}
+
+/* Layout */
+main {
+    position: relative; 
+    height: 700px;
+    margin-top: 2em;
+    background-image: url(./assets/desktop/image-host.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.logo {
+    position: absolute;
+    top: 0;
+    left: 7%;
+    top: -4%;
+}
+.dots {
+    position: absolute;
+    right: 0;
+    bottom: -7%;
+}
+
+article {
+    position: relative;
+    left: 7%;
+    max-width: 723px;
+    background-color: var(--black);
+    padding-top: 5em;
+}
+    article h1 {
+        color: var(--green);
+        font-weight: 300;
+        font-size: 52px;
+        line-height: 62px;
+        margin-bottom: 1em;
+    }
+        article h1 span{
+            color: var(--white);
+        }
+    article .text {
+        width: 70%;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.658);
+        margin-bottom: 2em;
+    }
+    article .input-wr {
+        width: 70%;
+        background-color: var(--gray);
+        padding: .2em;
+        border-radius: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+        .input-wr input{
+            background-color: var(--gray);
+            border-radius: 100px;
+            font-size: .8rem;
+            border: none;
+            outline: none;
+            color: var(--white);
+            padding-left: 2em;
+            flex: 1;
+        }
+            .input-wr input::placeholder{
+                color: #ffffff94;
+                font-weight: 300;
+            }
+        .input-wr button {
+            background-color:  var(--green);
+            padding: 1em;
+            border-radius: 100px;
+            border: none;
+            cursor: pointer;
+        }
+            .input-wr button:hover {background-color: #B3FFE2}
+        article .error {
+            color: red;
+            font-weight: 300;
+            font-size: .8rem;
+            margin: .6em 0 1em 2em;
+            
+        }
+            .throw {display: none}
+        article .logos {
+            margin-top: 2em;
+            display: flex;
+            align-items: center;
+        }
+            .logos img {
+                opacity: .5;
+                margin-right: 3em;
+            }
+
+    /* Media */
+    @media (max-width: 1050px) {
+        main {
+            background-image: url(./assets/tablet/image-host.jpg);
+            margin: 0;
+        }
+
+        .logo {
+            top: 3%;
+        }
+        .dots {
+            left: 7%;
+            bottom: -25%;
+
+        }
+        article {
+            max-width: 635px;
+        }
+        
+    }
+
+    @media (max-width: 685px) {
+        main {
+            background-image: linear-gradient(
+            hsla(224, 35%, 11%, 0.85),
+            hsla(224, 35%, 11%, 0.85)
+            ),
+            url("./assets/mobile/image-host.jpg");
+            background-position: bottom;
+            background-size: cover;
+            height: 100vh;
+            margin-top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo {
+            position: static;
+            order: 1;
+            width: 8em;
+        }
+        .dots {
+            display: none;
+        }
+        article {
+            position: static;
+            max-width: 472px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            
+        }
+        article h1 {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+        article .text {
+            text-align: center;
+            width: 90%;
+        }
+
+            article .logos {
+                order: 5;
+                width: 100%;
+                justify-content: space-between;
+            }
+                article .logos img{
+                    width: 20%;
+                    margin-right: 0;
+                }
+
+            article .input-wr {
+                display: flex;
+                flex-direction: column;
+                background-color: var(--black);
+                order: 6;
+                margin-top: 2em;
+            }
+
+            article .input-wr input {
+                padding: 1.2em;
+                margin-bottom: 2em;
+            }
+            article .error {
+                order: 7;
+                margin: 0;
+                font-size: 16px;
+            }
+    }
+
+
+    
