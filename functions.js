@@ -1747,11 +1747,303 @@ console.log('Fumkcije');
 // console.log(squared(t1,t2));
 
 
+// const later = (func) => {
+//     return new Promise((resolve, reject) => {
+//         if(later) {
+//             resolve(func(4));
+//         } else {
+//             reject(new Error('Later is not defined'));
+//         }
+//     })
+// }
+
+// later(x => Promise.resolve(12 + x))
+//     .then(console.log)
+//     .catch(console.log)
 
 
 
+// function addbits(s) {
+//     return (s.replace(/\s/g, '').match(/[+\-]?([0-9\.]+)/g) || [])
+//         .reduce(function(sum, value) {
+//             return parseFloat(sum) + parseFloat(value);
+//         });
+// }
+
+// console.log(addbits('2+2+2*2+25'));
+
+
+// let x = {
+//     a:1,
+//     b:2
+// }
+
+// const str = 'hi';
+
+// const y = str.split('').reverse().join('')
+
+// console.log(y);
+
+// let x = {
+//     a:1,
+//     b:2,
+//     getA() {
+//         console.log(this.a)
+//         return this
+//     },
+//     getB() {
+//         console.log(this.b);
+//     }
+// };
+
+// x.getA().getB()
+
+// [1,2].print(); // 1,2
+
+// Array.prototype.print = function() {
+//     console.log(this.toString());
+// }
+
+// const a = [1,2,3,4,5,6];
+
+// a.print()
+
+
+// const a = function(x) {
+//     this.x = x;
+// };
+// a.prototype.getX = function() {
+//     // console.log(this.x);
+//     console.log('this i s AAAAA');
+// }
 
 
 
+// const b = function(x,y) {
+//     this.y = y;
+
+// };
+// b.prototype = Object.create(a.prototype);
+
+// b.prototype.getY = function() {
+//     console.log(this.y);
+//     console.log('this is BBBBB');
+// }
 
 
+
+// const newB = new b('x', 'y');
+
+// console.log(newB);
+// newB.getY()
+// newB.getX()
+
+// const obj = {
+//     a: {
+//         b: {
+//             c:1
+//         }
+//     }
+// };
+
+
+// const t1 = JSON.stringify(obj);
+
+
+
+// console.log(JSON.parse(t1));
+
+
+// const a = [1,2,3,4,6];
+// const b = [2,3,5,67,8,1];  
+// const c = a.concat(b).sort((a,b) => a-b)
+
+// console.log(c);
+
+
+// const arr = [1,2,5,7]
+
+// const sum =  arr.reduce((a,e) => a+e, 0)
+// console.log(sum);
+
+
+// add(1,2) ;
+// add(1)(2);
+
+// function add(n,i) {
+//     if(i) return n+i
+
+//     return function(i) {
+//         return n + i;
+//     }
+
+// }
+
+// console.log(add(1)(8));
+
+// const arr = [1,3,2,5,6,4,9,7,10] ;
+
+// const newA = arr.sort((a,b) => a-b);
+
+// const output = newA.forEach((el,i,n) => {
+//     if ((n[i + 1]) - el >1) console.log(el + 1);
+// });
+
+// console.log(output);
+
+
+
+// const til = {
+//     'one': 12,
+//     'five': 10,
+//     'ten':2,
+
+// };
+
+// 20.47;
+
+
+
+// let str = 'i love js';
+
+
+
+// const bills = {
+
+// function changeBack(amount) {
+//     const change = {
+//         one: 0,
+//         two: 0,
+//         five: 0,
+//         ten: 0
+//     }
+
+//     let reminder = 0;
+
+//     if(amount%10 === 0) {
+//         change.ten = amount / 10
+//         return change;
+//     } else {
+//         change.ten = +(amount / 10).toFixed()
+//         reminder = amount % 10;
+//     }
+
+//     if(reminder >= 5 && reminder % 5 === 0) {
+//         change.five = reminder / 5;
+//         return change;
+//     } else {
+//         change.five = +(reminder / 5).toFixed();
+//         reminder = reminder % 5;
+//     }
+
+//     if(reminder >= 2 && reminder % 2 === 0) {
+//         change.two = reminder / 2;
+//         return change;
+//     } else {
+//         change.two = +(reminder / 2).toFixed();
+//         reminder = reminder % 2;
+//     }
+
+//     if(reminder >= 1 && reminder % 1 === 0) {
+//         change.one = amount / 1;
+//         return change;
+//     } 
+
+//     return change
+// }
+
+// console.log(changeBack(1232));
+
+
+
+// const str = 'i love javaScript ';
+
+// const output = str.split(' ').reverse().map(el => el.split('').reverse().join('')).join(' ');
+
+// const out2 = str.split('').reverse().join('')
+
+// console.log(output);
+// console.log(out2)function Tes
+
+
+
+// function Test1(name,age) {
+//     this.name = name;
+//     this.age = age;
+
+// }
+
+// Test1.prototype.talk = function() {
+//     console.log(`${this.name} say hiii!`);
+// }
+
+// console.log(Test1.prototype);
+
+
+// function mile() {
+//     console.log('mile');
+// }
+
+// console.log(mile.prototype);
+
+// const obj = {
+//     name: 'mika',
+//     age: 32
+// };
+
+// console.log(obj.prototype);
+
+// const instance = new Test1('zmika', 28)
+
+// console.log(instance);
+
+//=====================================================
+
+// 1.
+async function delay() {
+    await setTimeout(() => {
+        console.log('gg')
+    }, 5000)
+}
+delay();
+
+
+// 2.
+
+async function sentanceGenerator() {
+    let sentance = '';
+    try {
+        await setTimeout(() => {
+            sentance += "Part1,"
+            console.log(sentance);
+        }, 1000);
+
+        await setTimeout(() => {
+            sentance += "Part2,"
+            console.log(sentance);
+        }, 2000);
+
+        await setTimeout(() => {
+            sentance += "Part3"
+            console.log(sentance);
+        }, 3000);
+    } catch (err) {
+        console.log(err)
+    }
+};
+
+sentanceGenerator();
+
+
+// 5.
+const fetchData = async () => {
+    try {
+        const response = await (await fetch('https://api.github.com')).json();
+        return response;
+    }
+    catch (err) {
+        console.log(err)
+    }
+};
+
+fetchData().then(data => console.log(data))
