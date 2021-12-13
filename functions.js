@@ -2000,50 +2000,72 @@ console.log('Fumkcije');
 //=====================================================
 
 // 1.
-async function delay() {
-    await setTimeout(() => {
-        console.log('gg')
-    }, 5000)
-}
-delay();
+// async function delay() {
+//     await setTimeout(() => {
+//         console.log('gg')
+//     }, 5000)
+// }
+// delay();
 
 
 // 2.
 
-async function sentanceGenerator() {
-    let sentance = '';
-    try {
-        await setTimeout(() => {
-            sentance += "Part1,"
-            console.log(sentance);
-        }, 1000);
+// async function sentanceGenerator() {
+//     let sentance = '';
+//     try {
+//         await setTimeout(() => {
+//             sentance += "Part1,"
+//             console.log(sentance);
+//         }, 1000);
 
-        await setTimeout(() => {
-            sentance += "Part2,"
-            console.log(sentance);
-        }, 2000);
+//         await setTimeout(() => {
+//             sentance += "Part2,"
+//             console.log(sentance);
+//         }, 2000);
 
-        await setTimeout(() => {
-            sentance += "Part3"
-            console.log(sentance);
-        }, 3000);
-    } catch (err) {
-        console.log(err)
-    }
-};
+//         await setTimeout(() => {
+//             sentance += "Part3"
+//             console.log(sentance);
+//         }, 3000);
+//     } catch (err) {
+//         console.log(err)
+//     }
+// };
+// sentanceGenerator();
 
-sentanceGenerator();
+//4
+
+async function hello() {
+    return 'Hello World!';
+}
+
+hello()
+    .then(res => console.log(res));
+
+// 5
+function Step5() {
+    return new Promise((resolve, reject) => {
+        const val = Math.round(Math.random() * 1);
+        val ? resolve('Lucky!!') : reject('Nope');
+    });
+}
+
+Step5()
+    .then(res => console.log(res))
+    .catch(err => console.log(err));
 
 
-// 5.
-const fetchData = async () => {
-    try {
-        const response = await (await fetch('https://api.github.com')).json();
-        return response;
-    }
-    catch (err) {
-        console.log(err)
-    }
-};
 
-fetchData().then(data => console.log(data))
+
+// 7.
+// const fetchData = async () => {
+//     try {
+//         const response = await (await fetch('https://api.github.com')).json();
+//         return response;
+//     }
+//     catch (err) {
+//         console.log(err)
+//     }
+// };
+
+// fetchData().then(data => console.log(data))
