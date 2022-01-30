@@ -2159,14 +2159,14 @@ console.log(createBreadcrumbElemrnts(url));
 // }
 
 
-// function shufleArr2(arr) {
-//     arr.forEach((el, i) => {
-//         let j = Math.floor(Math.random() * (i + 1));
-//         let temp = arr[i];
-//         arr[i] = arr[j];
-//         arr[j] = temp;
-//     })
-//     return arr;
-// }
+function shufleArr2(arr) {
+    arr.forEach((_, i) => {
+        let j = Math.floor(Math.random() * (i + 1));
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    })
+    return arr;
+}
 
-// console.log(shufleArr2(url));
+console.log(shufleArr2(url));
