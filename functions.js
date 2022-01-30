@@ -2035,24 +2035,24 @@ console.log('Fumkcije');
 
 //4
 
-async function hello() {
-    return 'Hello World!';
-}
+// async function hello() {
+//     return 'Hello World!';
+// }
 
-hello()
-    .then(res => console.log(res));
+// hello()
+//     .then(res => console.log(res));
 
-// 5
-function Step5() {
-    return new Promise((resolve, reject) => {
-        const val = Math.round(Math.random() * 1);
-        val ? resolve('Lucky!!') : reject('Nope');
-    });
-}
+// // 5
+// function Step5() {
+//     return new Promise((resolve, reject) => {
+//         const val = Math.round(Math.random() * 1);
+//         val ? resolve('Lucky!!') : reject('Nope');
+//     });
+// }
 
-Step5()
-    .then(res => console.log(res))
-    .catch(err => console.log(err));
+// Step5()
+//     .then(res => console.log(res))
+//     .catch(err => console.log(err));
 
 
 
@@ -2069,3 +2069,104 @@ Step5()
 // };
 
 // fetchData().then(data => console.log(data))
+
+
+// const test = "freeCodeCamp";
+
+// function reverseString(str) {
+//     let index = str.length - 1;
+//     let output = '';
+
+//     if (index < 0) return output;
+//     output = str[index];
+//     index -= 1;
+
+
+//     return reverseString(str);
+// }
+
+// console.log(reverseString(test));
+
+// function reverse(str) {
+//     if (str.length <= 1) {
+//         return str;
+//     }
+//     else {
+//         return str.charAt(str.length - 1) + reverse(str.substring(0, str.length - 1));
+//     }
+// }
+
+// console.log(reverse(test));
+
+
+
+const url = ["relations", "328", "projects", "2"];
+
+
+const maskId = (idOwner, id) => {
+    if (idOwner === "relations") {
+        // Make API call, find relation by id;
+        // Return relation.name
+
+        return "Relation Name";
+    }
+
+    if (idOwner === "projects") {
+        // Make API call, find project by id;
+        //Return project name
+
+        return "Project Name";
+    }
+
+}
+
+
+const createBreadcrumbElemrnts = (points) => {
+    const output = points.map((point, i) => {
+        if (+point) {
+            const masked = maskId(points[i - 1], point);
+            return {
+                element: masked,
+                to: points.join("/")
+            }
+        }
+
+        return {
+            element: point,
+            to: points.join("/")
+        }
+    })
+
+    return output;
+}
+
+console.log(createBreadcrumbElemrnts(url));
+
+
+
+
+
+
+
+// function shufleArr(arr) {
+//     for (let i = arr.length - 1; i > 0; i--) {
+//         let j = Math.floor(Math.random() * (i + 1));
+//         let temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//     }
+//     return arr;
+// }
+
+
+// function shufleArr2(arr) {
+//     arr.forEach((el, i) => {
+//         let j = Math.floor(Math.random() * (i + 1));
+//         let temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//     })
+//     return arr;
+// }
+
+// console.log(shufleArr2(url));

@@ -474,3 +474,73 @@
     
 
 
+// property   .prototype
+
+// const Bird = function(name, spc) {
+//     this.name = name;
+//     this.spc = spc;
+// }
+
+
+// Bird.prototype.fly = function() {
+//     console.log(this.name + ' says wohooo!');
+// }
+
+
+// ==================================>
+
+
+// const bird1 = new Bird('Pera', 'Detlic');
+
+// 1. {}
+// 2. this. 
+// 3. {}.__proto__ === Bird.prototype;
+// 4. return {}
+
+// console.log(bird1);
+
+
+// console.log(bird1.name);
+// console.log(bird1.spc);
+// onsole.log(bird1);
+
+
+
+// const Person = function(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
+
+// Person.prototype.myAge = function() {
+//     console.log(this.age);
+// };
+
+// const person1 = new Person('Zmika', 28);
+
+// console.log(person1);
+// person1.myAge()
+
+// const Student = function(name, age, school) {
+//     this.name = name;
+//     this.age = age;
+//     this.school = school;
+// }
+
+// Student.prototype = Object.create(Person.prototype);
+// // Student.prototype = Person.prototype;
+// Student.prototype.mySchool = function() {
+//     console.log(this.school);
+// }
+
+// const student1 = new Student('Pera', 24, 'Ekonomska')
+// console.log(student1);
+
+
+// student1.myAge()
+// student1.mySchool()
+
+
+// REST COUNTRIES
+// https://restcountries.com/v2/
+
+
