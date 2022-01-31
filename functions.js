@@ -2100,47 +2100,47 @@ console.log('Fumkcije');
 
 
 
-const url = ["relations", "328", "projects", "2"];
+// const url = ["relations", "328", "projects", "2"];
 
 
-const maskId = (idOwner, id) => {
-    if (idOwner === "relations") {
-        // Make API call, find relation by id;
-        // Return relation.name
+// const maskId = (idOwner, id) => {
+//     if (idOwner === "relations") {
+//         // Make API call, find relation by id;
+//         // Return relation.name
 
-        return "Relation Name";
-    }
+//         return "Relation Name";
+//     }
 
-    if (idOwner === "projects") {
-        // Make API call, find project by id;
-        //Return project name
+//     if (idOwner === "projects") {
+//         // Make API call, find project by id;
+//         //Return project name
 
-        return "Project Name";
-    }
+//         return "Project Name";
+//     }
 
-}
+// }
 
 
-const createBreadcrumbElemrnts = (points) => {
-    const output = points.map((point, i) => {
-        if (+point) {
-            const masked = maskId(points[i - 1], point);
-            return {
-                element: masked,
-                to: points.join("/")
-            }
-        }
+// const createBreadcrumbElemrnts = (points) => {
+//     const output = points.map((point, i) => {
+//         if (+point) {
+//             const masked = maskId(points[i - 1], point);
+//             return {
+//                 element: masked,
+//                 to: points.join("/")
+//             }
+//         }
 
-        return {
-            element: point,
-            to: points.join("/")
-        }
-    })
+//         return {
+//             element: point,
+//             to: points.join("/")
+//         }
+//     })
 
-    return output;
-}
+//     return output;
+// }
 
-console.log(createBreadcrumbElemrnts(url));
+// console.log(createBreadcrumbElemrnts(url));
 
 
 
@@ -2159,14 +2159,31 @@ console.log(createBreadcrumbElemrnts(url));
 // }
 
 
-function shufleArr(arr) {
-    arr.forEach((el, i) => {
-        let randomIndex = Math.floor(Math.random() * (i + 1));
-        let temp = el;
-        arr[i] = arr[randomIndex];
-        arr[randomIndex] = temp;
+// function shufleArr(arr) {
+//     arr.forEach((el, i) => {
+//         let randomIndex = Math.floor(Math.random() * (i + 1));
+//         let temp = el;
+//         arr[i] = arr[randomIndex];
+//         arr[randomIndex] = temp;
+//     })
+//     return arr;
+// }
+
+// console.log(shufleArr(url));
+
+
+const test = ["jedan", "dva", "tri"];
+
+const mask = (id, owner) => {
+    test.forEach((el, i, n) => {
+        if (el === id) {
+            n[i] = owner
+        };
     })
-    return arr;
 }
 
-console.log(shufleArr(url));
+console.log(test);
+
+mask("dva", "DVA");
+
+console.log(test);
